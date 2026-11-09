@@ -1,12 +1,12 @@
 # FAIR by Design Workshop
 
-FAIR by Design: Building Findable, Accessible, Interoperable, and Reusable Research Workflows
+<!-- FAIR by Design: Building Findable, Accessible, Interoperable, and Reusable Research Workflows -->
 
 This repository contains materials used in a 2-hour workshop to teach F.A.I.R. 
 Data Management principles at St. Jude Research Children's Hospital's Knowledge 
 in Data Science 2026 Symposium (KIDS26) in November, 2026.
 
-## Workshop Introduction
+## Workshop Summary
 
 The FAIR Guiding Principles of Findable, Accessible, Interoperable, and Reusable 
 were introduced in 2016 to provide a framework for improving data stewardship 
@@ -14,16 +14,6 @@ while supporting reproducibility and machine actionability. This workshop will
 introduce the FAIR data principles as defined by Wilkinson et al 
 (Sci Data, 2016) to the St. Jude data science community and provide strategies 
 for incorporating FAIR principles throughout the research data life cycle. 
-Participants will work through a series of facilitated exercises focused on 
-the four FAIR dimensions. We will 1) evaluate metadata and discoverability; 
-2) consider appropriate access mechanisms for sensitive data; 3) address 
-interoperability through standardized terminology, formats, and metadata; and 
-4) address reusability through provenance, documentation, data-use information, 
-and reproducible workflows. A final activity will examine FAIR from the 
-perspective of computational and AI systems and consider what makes research 
-objects machine-actionable. Participants will also be introduced to the FAIR 
-Cookbook and other practical resources for continuing their FAIRification 
-journey.
 
 ## Learning Objectives
 
@@ -53,6 +43,10 @@ GitHub Pages URLs are not guaranteed persistent identifiers.
 * Archive repo through Zenodo to obtain a DOI. 
 * Update `CITATION.cff` with the DOI and version. 
 
+
+<!--
 ## Attribution
 
 Workshop material template prepared for KIDS26. Replace placeholder author details in `CITATION.cff` before publishing.
+
+-->
