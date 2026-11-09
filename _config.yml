@@ -1,0 +1,18 @@
+title: "FAIR by Design"
+description: "A hands-on workshop on FAIR data principles and reproducible biomedical research workflows."
+
+url: "https://doraaobodo.github.io"
+baseurl: "/fair-by-design"
+
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+
+search_enabled: true
+
+aux_links:
+  "View on GitHub":
+    - "https://github.com/doraaobodo/fair-by-design"
+
+aux_links_new_tab: true

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the versioned workshop materials when using or adapting them."
+title: "FAIR by Design: Building Findable, Accessible, Interoperable, and Reusable Research Workflows"
+type: software
+authors:
+  - family-names: "Obodo"
+    given-names: "Dora"
+license: CC-BY-4.0
+repository-code: "https://github.com/doraaobodo/fair-by-design"
+# Add version, date-released, and DOI after your first archived release.
