@@ -12,8 +12,8 @@ This workshop introduces practical approaches to improving the
 findability, accessibility, interoperability, and reusability of 
 biomedical research data and computational workflows.
 
----
-## Introduction
+
+# Introduction
 
 The FAIR Guiding Principles of Findable, Accessible, Interoperable, and Reusable 
 were introduced in 2016 to provide a framework for improving data stewardship 
@@ -103,14 +103,14 @@ Each module includes:
 Follow the modules in order during the workshop or explore them independently afterward.
 
 ---
-
+<!--
 ## Resources and Further Reading
 
 - [The FAIR Guiding Principles — Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18)
 - [FAIR Cookbook](https://faircookbook.elixir-europe.org/)
 - [FAIRsharing](https://fairsharing.org/)
 - [GO FAIR Initiative](https://www.go-fair.org/)
-- [EMBL-EBI Training](https://www.ebi.ac.uk/training/)
+- [EMBL-EBI Training](https://www.ebi.ac.uk/training/) -->
 
 ---
 
