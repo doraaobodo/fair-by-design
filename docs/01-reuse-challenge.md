@@ -11,11 +11,11 @@ description: "A ten-minute interactive exercise on the barriers to biomedical da
 **Can you reuse this dataset?**
 
 **Scenario:** You are studying whether gene-expression patterns are associated 
-with treatment response in a clinical trial. A collaborator sends you a [CSV 
-file]('/exercises/data/final_data_v2_REALLYFINAL.csv') from a previous study and a short [README]('/exercises/data/README.md'). 
+with treatment response in a clinical trial. A collaborator sends you a CSV 
+file '/exercises/data/final_data_v2_REALLYFINAL.csv' from a previous study and a short README '/exercises/data/README.md'. 
 
 Assess whether these records are adequate to support a new analysis. Open the 
-[CSV file]('/exercises/data/final_data_v2_REALLYFINAL.csv') and [README]('/exercises/data/README.md') files. Try to answer:
+CSV file '/exercises/data/final_data_v2_REALLYFINAL.csv' and README'/exercises/data/README.md' files. Try to answer:
 
 1. What does each column mean, and what units or coding conventions are used?
 2. Which samples or observations can legitimately be compared?
@@ -103,7 +103,7 @@ download sensitive patient information.
 FAIR is about improving the ability of people and machines to find, access, 
 interpret, and reuse research objects appropriately. 
 
-**Next:** [FAIR Foundations]('/docs/02-fair-foundations.html')
+**Next:** FAIR Foundations '/docs/02-fair-foundations.html'
 
 
 # TODO:
