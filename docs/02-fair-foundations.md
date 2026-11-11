@@ -19,7 +19,7 @@ In 2016, Wilkinson and colleagues introduced the **FAIR Guiding Principles** to 
 
 <embed src="{{ '/docs/FAIR_Research_Data_Workshop.pdf' | relative_url }}" width="100%" height="600px" type="application/pdf" />
 
-Alternatively, [Download the PDF]({{ '/assets/slides.pdf' | relative_url }})
+Alternatively, [Download the PDF]({{ '/docs/FAIR_Research_Data_Workshop.pdf' | relative_url }})
 
 ---
 ## The four FAIR principles
