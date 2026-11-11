@@ -15,7 +15,6 @@ In Module 1, you could open a CSV file, but could you confidently interpret it? 
 
 In 2016, Wilkinson and colleagues introduced the **FAIR Guiding Principles** to improve the ability of people **and machines** to find and reuse scientific research objects. FAIR describes desired properties, not a mandatory software stack or a single technical standard.
 
-> **Discussion (30 seconds):** Which missing piece of information in the leukemia dataset would you ask its creator for first?
 
 ## The four FAIR principles
 
@@ -30,26 +29,23 @@ In 2016, Wilkinson and colleagues introduced the **FAIR Guiding Principles** to 
 
 Our example file includes `PtID`, `dx`, `resp`, `sample`, `gene`, `val`, `day`, and `grp`. These labels may seem familiar, but they do not communicate all the information necessary for safe interpretation or integration.
 
-**Quick audience prompt:** Which FAIR dimension would you address first? There is no single correct answer: the dimensions are related, but improvements can be incremental.
+**Quick audience prompt:** 
+Which FAIR dimension would you address first? There is no single correct answer: the dimensions are related, but improvements can be incremental.
+ Which missing piece of information in the leukemia dataset would you ask its creator for first?
 
-## FAIR does not mean open
-
-**FAIR ≠ unrestricted public release.** For patient-level biomedical data, the underlying records may require secure storage, review, authentication, and authorization. A discoverable metadata record can still describe the study, its variables, and how eligible researchers can request access.
 
 Consider two distinct objects:
 
 1. **Public metadata record:** title, summary, data types, identifier, steward, and access instructions.
 2. **Controlled-access dataset:** sensitive records provided only to approved users under appropriate conditions.
 
-> **Discuss:** What information about our fictional leukemia dataset could be safely described in a public catalog without exposing individual-level records?
+**Discuss:** What information about our fictional leukemia dataset could be safely described in a public catalog without exposing individual-level records?
 
 **Important:** Use only synthetic data in this workshop. FAIR practices do not override privacy, consent, institutional policy, or other applicable restrictions.
 
 ## FAIR for machines and AI
 
 FAIR emphasizes **machine-actionability**: the extent to which software can discover, evaluate, and appropriately use a digital research object based on explicit, structured information.
-
-A program may parse `resp = 2` successfully while having no basis to decide whether `2` means progression, partial response, or something else. An AI agent can generate a plausible answer from such a file and still reach an invalid scientific conclusion.
 
 For responsible automated use, a research object may need:
 
@@ -58,7 +54,7 @@ For responsible automated use, a research object may need:
 - Stable identifiers and relationships among datasets, code, and methods
 - Provenance, units, processing information, and use restrictions
 
-> **Think–pair–share (1 minute):** If an AI agent were asked to identify genes associated with better treatment response, what should it check **before** analyzing this CSV?
+**Think–pair–share (1 minute):** If an AI agent were asked to identify genes associated with better treatment response, what should it check **before** analyzing this CSV?
 
 ## Knowledge check
 
@@ -88,4 +84,4 @@ Discuss the answers before opening the next module.
 - [FAIRsharing](https://fairsharing.org/) -->
 
 
-[← Module 1: Data Reuse Challenge](01-reuse-challenge.md) | [Next: Findable and Accessible →](03-findable-accessible.md)
+[← Module 1: Data Reuse Challenge]('/docs/01-reuse-challenge.html/') | [Next: Findable and Accessible →]('/docs/03-findable-accessible.html')
