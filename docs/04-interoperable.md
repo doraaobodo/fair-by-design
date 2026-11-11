@@ -16,11 +16,11 @@ The original FAIR Guiding Principles (Wilkinson et al., 2016) define:
 
 <p align="center">
   <img
-    src="{{ '/assets/04 _Interoperable_SubPrinciples.png' | relative_url }}"
+    src="{{ '/assets/04_Interoperable_SubPrinciples.png' | relative_url }}"
     alt="Interoperable Sub-principles"
     style="width: 100%; height: auto;"
   /><br>
-  </p>
+</p>
 
 **Remember:** I1 is about a common way to express information; I2 is about shared meanings for terms; I3 is about meaningful links between research objects. All three work together.
 
@@ -34,8 +34,7 @@ Interoperability operates via several different layers:
     alt="Interoperability Layers"
     style="width: 100%; height: auto;"
   /><br>
-  </p>
-
+</p>
 
 ## 3. Controlled vocabularies and ontologies: agreeing on meaning
 
@@ -53,15 +52,13 @@ Would you map `resp = 1` to a standard response term before knowing the original
 
 NCBI resources provide a practical example of connected research records. They store **different, complementary information**:
 
-
 <p align="center">
   <img
-    src="{{ '/assets/04 _Interoperable_Bioproject_with_Interop.jpg' | relative_url }}"
+    src="{{ '/assets/04_Interoperable_Bioproject_with_Interop.jpg' | relative_url }}"
     alt="Interoperability Bioproject"
     style="width: 100%; height: auto;"
   /><br>
-  </p>
-
+</p>
 
 1. **The 3-Pillar Ecosystem (Top Row — Principle I3 in Action):**
    * BioProject (`PRJNAxxxxxx`) acts as the central metadata hub ("The Why & Who") rather than a raw file bin.
@@ -154,14 +151,13 @@ perturbations and pathways up to anatomical regions, phenotypes, and approved
 drugs. Crucially, it includes explicit relationship edges for drug indications, 
 contraindications, and off-label uses.
 
-
-<p align="center">
+<p align="center" markdown="1">
   <img
-    src="{{ '/assets/04 _Interoperable_PRIMEKG.jpg' | relative_url }}"
+    src="{{ '/assets/04_Interoperable_PRIMEKG.jpg' | relative_url }}"
     alt="PRIMEKG Figure 2"
     style="width: 100%; height: auto;"
   /><br>
-  <em>PrimeKG ([PMID: 36732524](https://pmc.ncbi.nlm.nih.gov/articles/PMC9893183/)) 
+  <em>PrimeKG (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9893183/">PMID: 36732524</a>)   
   Components. (a) Shown are 20 primary data resources curated to 
   develop PrimeKG. The colors highlight which data records are used to uniquely 
   identify each node type. For example, GO is colored by biological processes, 
@@ -180,8 +176,7 @@ contraindications, and off-label uses.
   Entrez: Entrez gene, GO: gene ontology, UMLS: unified medical language 
   system, HPO: human phenotype ontology, CTD: comparative toxicogenomics 
   database, SIDER: side effect resource. </em>
-  </p>
-
+</p>
 
 
 **Do I Need RDF to Make My Data Interoperable?** Not always. You do not need to 
