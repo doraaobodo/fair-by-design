@@ -6,11 +6,14 @@ nav_order: 1
 # FAIR by Design 101
 **Building Findable, Accessible, Interoperable, and Reusable Research Workflows**
 
-Welcome to the FAIR by Design Workshop! This repository contains materials used in a 2-hour workshop to teach F.A.I.R. 
-Data Management principles at St. Jude Research Children's Hospital's Knowledge 
-in Data Science 2026 Symposium (KIDS26) in November, 2026.
+Welcome to **FAIR by Design 101**, a two-hour interactive workshop presented at 
+the **Knowledge in Data Science Symposium 2026 (KIDS26)** at St. Jude Children's Research Hospital.
+This workshop introduces practical approaches to improving the 
+findability, accessibility, interoperability, and reusability of 
+biomedical research data and computational workflows.
 
-# Introduction
+---
+## Introduction
 
 The FAIR Guiding Principles of Findable, Accessible, Interoperable, and Reusable 
 were introduced in 2016 to provide a framework for improving data stewardship 
@@ -29,50 +32,100 @@ objects machine-actionable. Participants will also be introduced to the FAIR
 Cookbook and other practical resources for continuing their FAIRification 
 journey.
 
+---
+
 ## Audience
 
 This workshop is designed for research professionals of any stage of training 
 interested in learning how to improve their data management and data stewardship 
-practices.
+practices. No prior experience with FAIR principles or programming is required.
+
+---
 
 ## Learning Objectives
 
-**By the end**, you will be able to identify and explain the four FAIR principles and 
-recognize examples of their application in biomedical research workflows.
+By the end of this workshop, participants will be able to:
 
-**By the end**, you will be able to evaluate a research dataset or computational 
-workflow for FAIR-related gaps in metadata, accessibility, interoperability, 
-and reusability.
+1. **Explain FAIR principles:** Describe the four FAIR dimensions and 
+distinguish FAIR data from open data.
 
-**By the end**, you will be able to assess basic machine-actionability requirements 
-and identify at least two changes that would improve the ability of computational 
-or AI systems to discover, interpret, or reuse a research object.
+2. **Identify barriers to reuse:** Evaluate biomedical research data and 
+workflows for gaps in metadata, discoverability, accessibility, 
+interoperability, and reusability.
 
+3. **Apply FAIR practices:** Identify improvements involving standardized 
+metadata, documentation, provenance, access conditions, and reproducible 
+computational workflows.
 
-## Secondary objectives
+4. **Connect FAIR to AI and research practice:** Recognize basic 
+machine-actionability requirements and identify at least two FAIR improvements 
+applicable to their own research.
 
-By the end of the workshop, you will be able to:
-
-1. Explain the FAIR principles and distinguish FAIR from open data.
-2. Identify barriers to discovering, accessing, integrating, and reusing biomedical research objects.
-3. Improve metadata, documentation, provenance, and access information in a sample research workflow.
-4. Identify one practical FAIR improvement to adopt in your own work.
+---
 
 ## Workshop Agenda
 
-| Time | Topic |What Happens
-|---|---|
-| 0:00–0:10 | Welcome and data reuse challenge |Introductions from instructors and Introduce a biomedical research scenario.
-| 0:10–0:25 | FAIR foundations |Introduction to FAIR; FAIR vs. open data; FAIR for sensitive/controlled-access biomedical data; humans vs. machines.
-| 0:25–0:50 | Findable and Accessible |Discuss practices and issues within Findable and Accessible 
-| 0:50–1:10 | Interoperable |Discuss practices and issues of Interoperability with machines and other data
-| 1:10–1:15 | Break |
-| 1:15–1:35 | Reusable and Reproducible | Discuss practices and issues of Resusibility
-| 1:35–1:50 | FAIR and AI machine-actionability |AI Agent exercise involving FAIR
-| 1:50–2:00 | Action plan and resources |Identify FAIR in your own work; Introduce AI COokbook 
+| Time | Module | Activity |
+|:---|:---|:---|
+| 0:00–0:10 | [Welcome and Data Reuse Challenge](docs/01-reuse-challenge.md) | Introductions and an interactive biomedical data reuse scenario |
+| 0:10–0:25 | [FAIR Foundations](docs/02-fair-foundations.md) | Introduction to FAIR, FAIR vs. open data, sensitive data, and machine-actionability |
+| 0:25–0:50 | [Findable and Accessible](docs/03-findable-accessible.md) | Evaluate metadata, discoverability, identifiers, and access mechanisms |
+| 0:50–1:10 | [Interoperable](docs/04-interoperable.md) | Explore data standards, controlled vocabularies, formats, and integration challenges |
+| 1:10–1:15 | Break | Five-minute break |
+| 1:15–1:35 | [Reusable and Reproducible](docs/05-reusable.md) | Examine provenance, documentation, data-use conditions, and reproducible workflows |
+| 1:35–1:50 | [FAIR and AI](docs/06-ai.md) | Discuss how computational agents discover, interpret, and appropriately reuse research objects |
+| 1:50–2:00 | [FAIR Action Plan and Resources](docs/07-action-plan.md) | Identify practical FAIR improvements and explore resources for continued learning |
 
-[Start with the first activity](docs/01-reuse-challenge.md)
+**Total duration:** 120 minutes, including a five-minute break.
 
-## Citation
+---
 
-See [CITATION.cff](https://github.com/doraaobodo/fair-by-design/blob/main/CITATION.cff).
+## Before You Begin
+
+**What You Will Need**
+
+- A laptop or device with a web browser
+- Internet access
+
+No software installation or GitHub account is required to participate.
+
+**How to Use This Website**
+
+This website serves as both a learning resource and a practical example of FAIR-oriented research documentation.
+
+Each module includes:
+
+- An introduction to key concepts
+- Practical examples from biomedical research
+- Guided activities or discussion questions
+- Key takeaways and additional resources
+
+Follow the modules in order during the workshop or explore them independently afterward.
+
+---
+
+## Resources and Further Reading
+
+- [The FAIR Guiding Principles — Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18)
+- [FAIR Cookbook](https://faircookbook.elixir-europe.org/)
+- [FAIRsharing](https://fairsharing.org/)
+- [GO FAIR Initiative](https://www.go-fair.org/)
+- [EMBL-EBI Training](https://www.ebi.ac.uk/training/)
+
+---
+
+## Citation and Reuse
+
+Workshop materials are maintained in the [FAIR by Design GitHub repository](https://github.com/doraaobodo/fair-by-design).
+
+For citation information, see the [CITATION.cff](https://github.com/doraaobodo/fair-by-design/blob/main/CITATION.cff) file.
+
+Please consult the repository's license and attribution information before adapting or redistributing workshop materials.
+
+---
+
+## Questions or Feedback?
+
+Questions, suggestions, and contributions are welcome.
+
+Visit the [GitHub repository](https://github.com/doraaobodo/fair-by-design) to explore the source materials or suggest improvements.
