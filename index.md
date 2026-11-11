@@ -67,7 +67,7 @@ applicable to their own research.
 
 | Time | Module | Activity |
 |:---|:---|:---|
-| 0:00–0:10 | [Welcome and Data Reuse Challenge](docs/01-reuse-challenge.md) | Introductions and an interactive biomedical data reuse scenario |
+| 0:00–0:10 | [Welcome and Data Reuse Challenge]({% docs/01-reuse-challenge.md %}) | Introductions and an interactive biomedical data reuse scenario |
 | 0:10–0:25 | [FAIR Foundations](docs/02-fair-foundations.md) | Introduction to FAIR, FAIR vs. open data, sensitive data, and machine-actionability |
 | 0:25–0:50 | [Findable and Accessible](docs/03-findable-accessible.md) | Evaluate metadata, discoverability, identifiers, and access mechanisms |
 | 0:50–1:10 | [Interoperable](docs/04-interoperable.md) | Explore data standards, controlled vocabularies, formats, and integration challenges |
@@ -103,14 +103,14 @@ Each module includes:
 Follow the modules in order during the workshop or explore them independently afterward.
 
 ---
-<!--
+
 ## Resources and Further Reading
 
 - [The FAIR Guiding Principles — Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18)
 - [FAIR Cookbook](https://faircookbook.elixir-europe.org/)
 - [FAIRsharing](https://fairsharing.org/)
 - [GO FAIR Initiative](https://www.go-fair.org/)
-- [EMBL-EBI Training](https://www.ebi.ac.uk/training/) -->
+- [EMBL-EBI Training](https://www.ebi.ac.uk/training/) 
 
 ---
 

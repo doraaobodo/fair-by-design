@@ -11,9 +11,12 @@ plugins:
 
 search_enabled: true
 
+nav_enabled: true
+
+# color_scheme: light
+
 aux_links:
   "View on GitHub":
     - "https://github.com/doraaobodo/fair-by-design"
 
 aux_links_new_tab: true
-# nav_external_links_new_tab: true
