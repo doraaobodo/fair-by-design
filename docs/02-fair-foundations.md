@@ -84,4 +84,4 @@ Discuss the answers before opening the next module.
 - [FAIRsharing](https://fairsharing.org/) -->
 
 
-[← Module 1: Data Reuse Challenge]('/docs/01-reuse-challenge.html/') | [Next: Findable and Accessible →]('/docs/03-findable-accessible.html')
+[← Module 1: Data Reuse Challenge]({{ '/docs/01-reuse-challenge.html/' | relative_url }}) | [Next: Findable and Accessible →]({{ '/docs/03-findable-accessible.html' | relative_url }})
