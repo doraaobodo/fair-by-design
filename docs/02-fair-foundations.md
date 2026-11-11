@@ -15,7 +15,13 @@ In Module 1, you could open a CSV file, but could you confidently interpret it? 
 
 In 2016, Wilkinson and colleagues introduced the **FAIR Guiding Principles** to improve the ability of people **and machines** to find and reuse scientific research objects. FAIR describes desired properties, not a mandatory software stack or a single technical standard.
 
+---
 
+<embed src="{{ '/docs/FAIR_Research_Data_Workshop.pdf' | relative_url }}" width="100%" height="600px" type="application/pdf" />
+
+Alternatively, [Download the PDF]({{ '/assets/slides.pdf' | relative_url }})
+
+---
 ## The four FAIR principles
 
 | Principle | Core idea | Example from our fictional dataset |
