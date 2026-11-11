@@ -11,7 +11,6 @@ description: "Findable data, metadata, persistent identifiers, and a guided biom
 
 > Data cannot be reused if potential users cannot discover that it exists. Findability depends on stable identifiers, rich metadata, explicit connections between metadata and data, and searchable registration.
 
----
 
 ## 1. The four Findable sub-principles (F1–F4)
 
@@ -28,7 +27,7 @@ Wilkinson et al., 2016) specify:
   
 **Important distinction:** F1 in the original 2016 publication specifies a *globally unique and persistent identifier*. Some implementation guidance additionally emphasizes that identifiers should be resolvable. The stronger wording is useful in practice, but it is not a verbatim quote of F1.
 
-## 2. Analogy: Metadata is a library catalog record
+## 2. Metadata is a library catalog record
 
 Imagine a library filled with books but no catalog. The books exist, yet finding the one relevant to your question could take hours. A useful catalog record tells you the title, author, topic, edition, and where the book is held.
 
@@ -98,7 +97,7 @@ For biomedical research, the most appropriate schema or minimum-information chec
 
 <p align="center">
   <img
-    src="{{ '/assets/03_Findable_and_Accessible_Bioproject_schema.png' | relative_url }}"
+    src="{{ '/assets/03_Findable_and_Accessible_Bioproject_schema.jpg' | relative_url }}"
     alt="BioProject Schema."
     style="width: 100%; height: auto;"
   /><br>
@@ -146,9 +145,13 @@ A **Digital Object Identifier (DOI)** is a persistent identifier commonly used f
 - **[re3data](https://www.re3data.org/):** A registry to help researchers locate suitable research data repositories.
 - **[PubMed](https://pubmed.ncbi.nlm.nih.gov/):** Primarily a literature discovery index, not a general-purpose dataset repository.
 
+
 > **How they work together:** Research object → descriptive metadata record → identifier and landing page → registration/indexing → search and discovery. The underlying files may be public or controlled-access depending on the project.
 
 > **Think about F3:** If a metadata record has its own identifier, how does it explicitly identify the dataset it describes? Make that relationship clear in the metadata rather than relying only on a human-readable sentence.
+
+
+>**NOTE** NLM DATA SHARING RESOURCES: A repository of repositories! (https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html)
 
 ## 6. Guided activity: Make our dataset more Findable (8 minutes)
 **Quick prompt:** A dataset has a filename and a shareable folder URL. Which Findable requirements, if any, does that establish?
