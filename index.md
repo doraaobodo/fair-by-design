@@ -67,7 +67,7 @@ applicable to their own research.
 
 | Time | Module | Activity |
 |:---|:---|:---|
-| 0:00–0:10 | [Welcome and Data Reuse Challenge]({% docs/01-reuse-challenge.md %}) | Introductions and an interactive biomedical data reuse scenario |
+| 0:00–0:10 | [Welcome and Data Reuse Challenge]({{ '/docs/01-reuse-challenge.html' | relative_url }})) | Introductions and an interactive biomedical data reuse scenario |
 | 0:10–0:25 | [FAIR Foundations](docs/02-fair-foundations.md) | Introduction to FAIR, FAIR vs. open data, sensitive data, and machine-actionability |
 | 0:25–0:50 | [Findable and Accessible](docs/03-findable-accessible.md) | Evaluate metadata, discoverability, identifiers, and access mechanisms |
 | 0:50–1:10 | [Interoperable](docs/04-interoperable.md) | Explore data standards, controlled vocabularies, formats, and integration challenges |
