@@ -4,19 +4,27 @@ description: "A hands-on workshop on FAIR data principles and reproducible biome
 url: "https://doraaobodo.github.io"
 baseurl: "/fair-by-design"
 
-remote_theme: just-the-docs/just-the-docs
+# Pin to a stable release for GitHub Pages compatibility
+remote_theme: just-the-docs/just-the-docs@v0.10.1
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
+# Theme appearance & navigation
+color_scheme: light
 search_enabled: true
-
 nav_enabled: true
+heading_anchors: true
 
-# color_scheme: light
-
+# Top-right navigation link
 aux_links:
   "View on GitHub":
     - "https://github.com/doraaobodo/fair-by-design"
-
 aux_links_new_tab: true
+
+# Exclude non-site files from the Jekyll build
+exclude:
+  - .Rhistory
+  - CITATION.cff
+  - LICENSE
