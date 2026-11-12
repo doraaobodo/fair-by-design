@@ -70,10 +70,9 @@ applicable to their own research.
 | 0:00–0:10 | [Welcome and Data Reuse Challenge]({{ '/docs/01-reuse-challenge.html' | relative_url }}) | Introductions and an interactive biomedical data reuse scenario |
 | 0:10–0:25 | [FAIR Foundations]({{ '/docs/02-fair-foundations.html' | relative_url }}) | Introduction to FAIR, FAIR vs. open data, sensitive data, and machine-actionability |
 | 0:25–0:50 | [Findable and Accessible]({{ '/docs/03-findable-accessible.html' | relative_url }}) | Evaluate metadata, discoverability, identifiers, and access mechanisms |
-| 0:50–1:10 | [Interoperable]({{ '/docs/04-interoperable.html' | relative_url }}) | Explore data standards, controlled vocabularies, formats, and integration challenges |
-| 1:10–1:15 | Break | Five-minute break |
-| 1:15–1:35 | [Reusable]({{ '/docs/05-reusable.html' | relative_url }}) | Examine provenance, documentation, data-use conditions, and reproducible workflows |
-| 1:35–1:50 | [FAIR and AI]({{ '/docs/06-ai.html' | relative_url }}) | Discuss how computational agents discover, interpret, and appropriately reuse research objects |
+| 0:50–1:15 | [Interoperable]({{ '/docs/04-interoperable.html' | relative_url }}) | Explore data standards, controlled vocabularies, formats, and integration challenges |
+| 1:15–1:20 | Break | Five-minute break |
+| 1:20–1:50 | [Reusable]({{ '/docs/05-reusable.html' | relative_url }}) | Examine provenance, documentation, data-use conditions, and reproducible workflows |
 | 1:50–2:00 | [FAIR Action Plan and Resources]({{ '/docs/07-action-plan.html' | relative_url }}) | Identify practical FAIR improvements and explore resources for continued learning |
 
 **Total duration:** 120 minutes, including a five-minute break.
