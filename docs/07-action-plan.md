@@ -1,9 +1,7 @@
-
 ---
 layout: default
-title: "07 - FAIR Action Plan and Resources"
-parent: Workshop Modules
-nav_order: 7
+title: "FAIR Action Plan and Resources"
+nav_order: 3
 description: "Frequently asked questions, the FAIR Cookbook, and practical steps for incorporating FAIR into research workflows."
 ---
 
