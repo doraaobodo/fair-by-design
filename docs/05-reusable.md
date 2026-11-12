@@ -19,12 +19,7 @@ of those research objects before building upon them.
 
 FAIR does not certify that data are correct or suitable for every analysis. 
 Rich documentation helps researchers *assess* fitness for reuse; scientific 
-validation remains essential. Similarly, **reusable does not necessarily mean openly available**: 
-sensitive biomedical data may require approved access and restricted uses.
-
-## 1. The Reusable sub-principles
-
-From [2016 FAIR Guiding Principles](https://doi.org/10.1038/sdata.2016.18).
+validation remains essential. 
 
 <p align="center">
   <img
@@ -57,7 +52,26 @@ catalog or search engine need so a human or machine can find this dataset in the
 the dataset, R1 asks, "What metadata does a researcher need to actually understand, 
 trust, and integrate this data into a new analysis?"
 
-## 2. Research software is a research object, too
+
+### A useful distinction: reproducibility vs. reusability
+
+- **Reproducibility:** Can someone recreate a reported result using the specified inputs, code, and environment?
+- **Reusability:** Can someone understand the research object and determine whether and how it can be used for a different purpose?
+
+These overlap, but they are not identical. A fully documented workflow may still 
+require controlled-access inputs; a runnable script may still be scientifically 
+inappropriate for a new cohort.
+
+<p align="center">
+  <img
+    src="{{ '/assets/05_Reusable_Reusability_Replicability_Reproducibility.png' | relative_url }}"
+    alt="Compare Reusability_Replicability_Reproducibility"
+    style="width: 100%; height: auto;"
+  /><br>
+</p>
+
+
+## Research software is a research object, too
 
 Biomedical research increasingly depends on scripts, notebooks, pipelines, 
 packages, and computational environments. The ARDC webinar explicitly extends 
@@ -69,10 +83,10 @@ changes over time, and may behave differently across environments.
 The broader [FAIR4RS principles](https://doi.org/10.15497/RDA00068) 
 adapt FAIR thinking specifically to research software.
 
-### Standardizing code and data management practices as part of a lab manual
+<span style="color: green;">### Standardizing code and data management practices as part of a lab manual</span>
 
 Imagine a lab manual that establishes these shared practices.
-Here is an example of a lab manual that is a living document of software approach in an Epidemiology lab: (Jade Benjamin-Chung, Stanford)[https://github.com/jadebc/lab-manual]
+Here is an example of a lab manual that is a living document of software approach in an Epidemiology lab: [Jade Benjamin-Chung, Stanford](https://github.com/jadebc/lab-manual)
 
 Essentially standard practice empowers research workflows to live beyond the immediate data use.
 
@@ -88,9 +102,9 @@ Essentially standard practice empowers research workflows to live beyond the imm
 | Tests, validation checks, and expected outputs | Helps detect errors and assess whether the workflow still behaves as intended. |
 | Instructions for permitted sharing and sensitive-data handling | Makes responsible reuse possible without exposing restricted data. |
 
-A lab manual is **not itself a FAIR certification**. It is a practical governance tool that makes reusable practices repeatable across projects and people.
+A lab manual is not itself a FAIR practice. However, it is a tool that makes reusable practices repeatable across projects and people.
 
-### Reusable Research Workflows
+### Reusable Computational Research Workflows
 
 Research studies typically accumulate folders containing analysis scripts, outputs, and possibly raw data files making up the study generation workflow.
 Workflows account for the bulk of the research output and therefore is considered a useful avenue for FAIRification.
@@ -148,16 +162,6 @@ Borrowed from [Jade Benjamin Chung Lab Manual Chapter 7](https://jadebc.github.i
 
 Adapted from [Jade Benjamin Chung Lab Manual Chapter 4](https://jadebc.github.io/lab-manual/reproducibility.html)
 
-### A useful distinction: reproducibility versus reusability
-
-- **Reproducibility:** Can someone recreate a reported result using the specified inputs, code, and environment?
-- **Reusability:** Can someone understand the research object and determine whether and how it can be used for a different purpose?
-
-These overlap, but they are not identical. A fully documented workflow may still 
-require controlled-access inputs; a runnable script may still be scientifically 
-inappropriate for a new cohort.
-
-
 ## 3. Provenance: the research object's history
 
 **Provenance** is the documented history of where a research object came from 
@@ -192,9 +196,7 @@ To make this workflow reusable, record:
 W3C PROV provides concepts for expressing provenance in structured, machine-interpretable form (usually written by an algorithm (e.g., python package `prov`):
 
 For example, `normalized_counts.csv` **wasGeneratedBy** a normalization activity, 
-which **used** `counts.tsv` and **wasAssociatedWith** an analysis pipeline. You do **not** 
-need to implement PROV to begin recording provenance. A well-maintained workflow, run manifest, 
-or analysis log can already make an enormous difference.
+which **used** `counts.tsv` and **wasAssociatedWith** an analysis pipeline.
 
 <p align="center">
   <img
@@ -204,6 +206,9 @@ or analysis log can already make an enormous difference.
   /><br>
 </p>
 
+You do *not* need to implement PROV to begin recording provenance. 
+A well-maintained workflow, run manifest, 
+or analysis log can already make an enormous difference.
 
 ### Why Provenance Matters for AI
 
@@ -223,34 +228,38 @@ whether it is appropriate for a particular scientific question.
 </p>
 
 
-Provenance supports trustworthy AI in several important ways:
+**Provenance supports trustworthy AI in several important ways:**
 
-**Data quality and reliability:** Knowing where training or input data originated, 
+<u>Data quality and reliability:** Knowing where training or input data originated, 
 how they were collected, and what quality-control procedures were applied helps 
 researchers assess whether the data are suitable for an AI application.
 
-**Transparency and explainability:** Documenting datasets, model versions, 
+<u>Transparency and explainability:</u> Documenting datasets, model versions, 
 preprocessing steps, and computational workflows makes it easier to trace how 
 an AI-generated result was produced. This supports auditing and scientific 
 interpretation, although provenance alone does not explain a model's internal 
 decision-making.
 
-**Bias detection and generalizability:** Information about study populations, 
+<u>Bias detection and generalizability:</u> Information about study populations, 
 sampling methods, and data-processing decisions helps researchers identify 
 potential sources of bias and assess whether a model may perform differently 
 across patient populations or research settings.
 
-**Reproducibility and accountability:** Recording training datasets, model versions, 
+<u>Reproducibility and accountability:</u> Recording training datasets, model versions, 
 software environments, parameters, and evaluation procedures allows researchers 
 to investigate unexpected results, reproduce analyses where feasible, and identify 
 where errors may have occurred.
 
-**Responsible data reuse:** Provenance can help researchers determine whether 
+<u>Responsible data reuse:</u> Provenance can help researchers determine whether 
 data were obtained and processed under conditions compatible with their intended 
 use. This is particularly important for sensitive biomedical and clinical data, 
 where consent, privacy, and data-use restrictions must be respected.
 
-## 4. Licensing and permissions: what am I allowed to do?
+
+Read more in ["A large-scale audit of dataset licensing and attribution in AI"](https://www.nature.com/articles/s42256-024-00878-8)
+Learn more @ https://www.dataprovenance.org/about 
+
+## Licensing and permissions: what am I allowed to do?
 
 **R1.1** is about making usage conditions clear. A publicly visible GitHub repository 
 is **not automatically licensed for unrestricted reuse**. Conversely, controlled-access data may have explicit permitted uses even though the data are not public.
@@ -271,11 +280,16 @@ Distinguish these questions:
 </p>
 
 
-**Practical exercise:** If a repository contains a script and no license, is it safe to assume you can redistribute a modified copy? **No.** Ask for clarification or seek an appropriate license before redistributing.
+If a repository contains a script and no license, is it safe to assume you can 
+redistribute a modified copy? **No.** Ask for clarification or seek an 
+appropriate license before redistributing.
 
-## 5. Community standards: why R1.3 matters
+## Community standards: why R1.3 matters
 
-**R1.3** asks whether research objects follow standards relevant to their scientific community. This is not a demand that every discipline use the same file format or reporting checklist. Instead, the community agrees on the information needed to interpret and compare its research.
+**R1.3** asks whether research objects follow standards relevant to their 
+scientific community. This is not a demand that every discipline use the same 
+file format or reporting checklist. Instead, the community agrees on the 
+information needed to interpret and compare its research.
 
 Examples to explore:
 
@@ -284,15 +298,22 @@ Examples to explore:
 - **BioSample metadata** — sample descriptors and attributes: [NCBI BioSample](https://www.ncbi.nlm.nih.gov/biosample/).
 - **FAIRsharing** — find standards, repositories, and policies: [fairsharing.org](https://fairsharing.org/).
 
-A good rule is to **choose standards based on the assay and research question**. For example, a bulk RNA-seq experiment, a clinical registry, and a microscopy study have different requirements.
+A good rule is to **choose standards based on the assay and research question**. 
+For example, a bulk RNA-seq experiment, a clinical registry, and a microscopy 
+study have different requirements.
 
 ### Discussion
 
-Would a new researcher know which reference genome was used? Which samples were excluded? Whether a clinical response variable was assessed at diagnosis or after treatment? Community standards help prevent those details from being silently omitted.
+Would a new researcher know which reference genome was used? Which samples were 
+excluded? Whether a clinical response variable was assessed at diagnosis or after 
+treatment? Community standards help prevent those details from being silently omitted.
 
-## 6. How journals and open science advance reuse
+## How journals and open science advance reuse
 
-Journals increasingly encourage or require clearer data availability statements, code availability, reporting standards, and repository deposition. Requirements vary by journal, article type, data sensitivity, and year; always consult the current author instructions.
+Journals increasingly encourage or require clearer data availability statements, 
+code availability, reporting standards, and repository deposition. Requirements 
+vary by journal, article type, data sensitivity, and year; always consult the 
+current author instructions.
 
 | Publisher or journal resource | Reuse-related practice to explore |
 |:--|:--|
@@ -302,28 +323,32 @@ Journals increasingly encourage or require clearer data availability statements,
 | [Scientific Data](https://www.nature.com/sdata/) | Data descriptors and documentation supporting discovery and reuse. |
 | [FAIRsharing](https://fairsharing.org/) | Discovery of community standards, repositories, and policies. |
 
-**A useful nuance:** A data availability statement saying “available upon reasonable request” does not, by itself, guarantee timely access or adequate documentation. A repository record, persistent identifier, metadata, and clearly defined access procedure are often stronger.
+**A useful nuance:** A data availability statement saying “available upon reasonable request” 
+does not, by itself, guarantee timely access or adequate documentation. A repository record, 
+persistent identifier, metadata, and clearly defined access procedure are often stronger.
 
 ### FAIR and open science: overlapping, not identical
 
 **Open science** promotes practices such as sharing research outputs, 
 transparent methods, collaborative development, and open access where
-appropriate. **FAIR** focuses on making research objects findable, accessible 
-under clear conditions, interoperable, and reusable by people and machines.
-
-Their overlap is substantial: version-controlled code, documented methods, 
+appropriate.The overlap between Open and FAIR is substantial: version-controlled code, documented methods, 
 persistent identifiers, transparent provenance, and clear reuse terms help both. 
 But **FAIR does not require all data to be open**, especially for pediatric and 
 clinical research.
 
-## 7. The Turing Way: practical guidance for everyday research
+## The Turing Way: practical guidance for everyday research
 
 [**The Turing Way**](https://book.the-turing-way.org/) is an open, 
 community-developed handbook for reproducible, ethical, collaborative research. 
 It is an excellent follow-up resource because it translates abstract principles 
 into day-to-day workflows.
 
-Start with:
+St. Jude Biohackaton Team 20 created an AI and Reproducible Research Assistant grounded on the Turing Way. 
+The assistnat perfoms a diagnostic of your research workflows, allowing for targeted guidance on improvement.
+
+St. Jude AI and Data Learning Assistant in Action: https://github.com/stjude-biohackathon/KIDS26-Team20
+
+To learn more about the Turing Way, start with:
 
 - [The Turing Way — Reproducible Research](https://book.the-turing-way.org/reproducible-research/reproducible-research.html)
 - [The Turing Way — Research Data Management](https://book.the-turing-way.org/reproducible-research/rdm/rdm.html)
@@ -334,14 +359,16 @@ These are resources for further exploration; page locations may change as the ha
 
 ### Bringing it back to our lab manual
 
-The most useful FAIR practice may be the one that your lab can adopt *consistently*: a shared README template, a coding style guide, required environment files, a naming convention, a review checklist, or a procedure for recording provenance. 
+The most useful FAIR practice may be the one that your lab can adopt *consistently*: 
+a shared README template, a coding style guide, required environment files, a naming 
+convention, a review checklist, or a procedure for recording provenance. 
 **Good habits become powerful when they are part of the normal research workflow rather than an extra step at publication.**
 
-## 8. Guided activity: make our leukemia dataset reusable (5 minutes)
+## Activity (optional): make our leukemia dataset reusable (5 minutes)
 
-Return to the synthetic dataset from [Module 1]({{ '/docs/01-reuse-challenge.html' | relative_url }}). Imagine another research team wants to examine whether expression values are associated with treatment response.
+Return to the synthetic dataset from [Module 1]({{ '/docs/01-reuse-challenge.html' | relative_url }}). 
+Imagine another research team wants to examine whether expression values are associated with treatment response.
 
-**Work individually for two minutes, then discuss as a room.**
 
 1. **R1 — Context:** What three pieces of information are missing that would most affect whether the data are suitable for a new analysis?
 2. **R1.1 — Rights:** What reuse or access conditions would you need to clarify before sharing the data?
@@ -349,23 +376,24 @@ Return to the synthetic dataset from [Module 1]({{ '/docs/01-reuse-challenge.htm
 4. **R1.3 — Standards:** Which data dictionary fields, assay standards, or clinical response definitions should be documented?
 5. **Software:** Name two files or practices that would help someone rerun the original analysis.
 
-**Do not invent facts about the dataset.** Label unknowns explicitly, and distinguish a proposed metadata field from a verified value.
+*Do not invent facts about the dataset.* Label unknowns explicitly, and distinguish a proposed metadata field from a verified value.
 
-### Suggested takeaways
+## Key takeaways
 
-- `resp` needs a validated coding scheme and response assessment definition.
-- `val` needs assay details, units/scale, processing and normalization provenance.
-- The dataset needs documented data-use conditions and appropriate access controls.
-- Code should identify inputs, parameters, software versions, and expected outputs.
-- Reuse requires both **scientific context** and **permission**, not just a downloadable file.
+- **R1**: Describe research objects with rich, accurate, and relevant information that supports informed reuse.
+- **R1.1**: Clearly document licenses, permissions, and data-use restrictions so others understand how research objects may be reused.
+- **R1.2**: Maintain detailed provenance, including data origins, processing steps, methods, software versions, and analytical decisions.
+- **R1.3:** Follow domain-relevant community standards for data, metadata, methods, and reporting.
+- Reproducible workflows enable reuse. Standardized practices and automated workflows make research easier to reproduce, maintain, and adapt.
+- Reusability begins at the start of research. Documentation, provenance, and good software practices should be incorporated throughout the research lifecycle.
 
-## 9. One-minute reflection
+## Reflection
 
-> What is one practice your research group could adopt *this month* to make future datasets or analyses easier to reuse?
+> What is one practice your research group could adopt *this month* to make future datasets or analyses easier to reuse? 
+Examples: create a README template; capture environment files; tag analysis releases; add data dictionaries; 
+document QC exclusions; record access conditions; or incorporate these practices into a lab manual.
 
-Examples: create a README template; capture environment files; tag analysis releases; add data dictionaries; document QC exclusions; record access conditions; or incorporate these practices into a lab manual.
-
-## References and attribution
+## References
 
 - Wilkinson, M. D. et al. (2016). [The FAIR Guiding Principles for scientific data management and stewardship](https://doi.org/10.1038/sdata.2016.18). *Scientific Data*.
 - Liffers, M. [ARDC FAIR Data 101 — Reusable, Webinar 8](https://ardc.edu.au/) (slides supplied for this workshop; sections on provenance, software, licensing, and versioning informed this lesson).

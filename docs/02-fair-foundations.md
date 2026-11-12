@@ -3,7 +3,7 @@ layout: default
 title: "02 - FAIR Foundations"
 parent: Workshop Modules
 nav_order: 2
-description: "A 15-minute introduction to FAIR principles, responsible access, and machine-actionability."
+description: "An introduction to FAIR principles."
 ---
 
 # Module 2 — FAIR Foundations
@@ -11,43 +11,74 @@ description: "A 15-minute introduction to FAIR principles, responsible access, a
 
 ## The problem FAIR addresses
 
-In Module 1, you could open a CSV file, but could you confidently interpret it? The missing definitions for `resp`, `val`, and `day` show that a readable file is not necessarily a reusable research object.
+In Module 1, you could safely read and access the CSV data, but could you 
+confidently interpret it for further analysis? The missing definitions
+for `resp`, `val`, and `day` show that data used in research are not 
+always reusable research objects.
 
-In 2016, Wilkinson and colleagues introduced the **FAIR Guiding Principles** to improve the ability of people **and machines** to find and reuse scientific research objects. FAIR describes desired properties, not a mandatory software stack or a single technical standard.
+Wilkinson and colleagues introduced the **FAIR Guiding Principles** to 
+improve the ability of people **and machines** to find and reuse scientific 
+research objects. Importantly, FAIR describes *desired* properties, 
+not a mandatory standard.
 
 ---
 
 <embed src="{{ '/docs/FAIR_Research_Data_Workshop.pdf' | relative_url }}" width="100%" height="600px" type="application/pdf" />
 
-Alternatively, [Download the PDF]({{ '/docs/FAIR_Research_Data_Workshop.pdf' | relative_url }})
+Alternatively, [View/Download PDF in new tab]({{ '/docs/FAIR_Research_Data_Workshop.pdf' | relative_url }})
 
 ---
-## The four FAIR principles
+### Looking back at the dataset
 
-| Principle | Core idea | Example from our fictional dataset |
+
+| PtID | dx | resp | sample | gene | val | day | grp |
+| :--- | :--- | :---: | :--- | :--- | :---: | :---: | :---: |
+| P01 | ALL | 1 | S01 | GATA3 | 8.2 | 0 | A |
+| P02 | ALL | 0 | S02 | GATA3 | 3.7 | 7 | B |
+| P03 | AML | 1 | S03 | GATA3 | NA | 0 | A |
+| P04 | ALL | 2 | S04 | STAT5A | 12.1 | 14 | B |
+| P05 | AML | 0 | S05 | STAT5A | 5.4 | 7 | A |
+| P06 | ALL | 1 | S06 | GATA3 | 6.0 | 14 | B |
+| P07 | ALL | | S07 | STAT5A | 9.3 | 0 | A |
+| P08 | AML | 1 | S08 | GATA3 | 4.8 | 7 | B |
+
+and [README.txt]({{ '/exercises/data/README.txt' | relative_url }}) 
+
+```
+# Study data
+
+File: `final_data_v2_REALLYFINAL.csv`
+
+Contains study samples and expression values. Some values may be missing. 
+
+This is the latest file we used for analysis.
+
+Contact the original team if you have questions.
+```
+
+Which FAIR dimension would you address first? Or, which missing piece of 
+information in the leukemia dataset would you ask its creator for first?
+There is no single correct answer: the dimensions are related, but improvements can be incremental.
+
+| Principle | Core idea | How to Address in fictional dataset |
 |:--|:--|:--|
 | **F — Findable** | Data and metadata have persistent identifiers, rich descriptions, and can be discovered through searchable resources. | Give the dataset a stable identifier and searchable description including study design and data types. |
 | **A — Accessible** | Data or metadata can be retrieved through defined, standardized methods; authentication and authorization can be required. | Publish an access-request procedure while retaining sensitive records in a controlled environment. |
 | **I — Interoperable** | Data and metadata use shared representations, vocabularies, and meaningful links to other research objects. | Define `dx` using a documented disease terminology; state what `resp` codes mean. |
 | **R — Reusable** | Data and metadata provide sufficient context, provenance, use conditions, and community-standard descriptions. | Document how `val` was measured and processed, what `NA` means, and which uses are permitted. |
 
-### Look back at the dataset
-
 Our example file includes `PtID`, `dx`, `resp`, `sample`, `gene`, `val`, `day`, and `grp`. These labels may seem familiar, but they do not communicate all the information necessary for safe interpretation or integration.
 
-**Quick audience prompt:** 
-Which FAIR dimension would you address first? There is no single correct answer: the dimensions are related, but improvements can be incremental.
- Which missing piece of information in the leukemia dataset would you ask its creator for first?
 
+## FAIR for Sensitive Data
 
 Consider two distinct objects:
 
 1. **Public metadata record:** title, summary, data types, identifier, steward, and access instructions.
 2. **Controlled-access dataset:** sensitive records provided only to approved users under appropriate conditions.
 
-**Discuss:** What information about our fictional leukemia dataset could be safely described in a public catalog without exposing individual-level records?
+What information about our fictional leukemia dataset could be safely described in a public catalog without exposing individual-level records?
 
-**Important:** Use only synthetic data in this workshop. FAIR practices do not override privacy, consent, institutional policy, or other applicable restrictions.
 
 ## FAIR for machines and AI
 
@@ -60,7 +91,7 @@ For responsible automated use, a research object may need:
 - Stable identifiers and relationships among datasets, code, and methods
 - Provenance, units, processing information, and use restrictions
 
-**Think–pair–share (1 minute):** If an AI agent were asked to identify genes associated with better treatment response, what should it check **before** analyzing this CSV?
+If an AI agent were asked to identify genes associated with better treatment response, what should it check *before* analyzing this CSV?
 
 ## Knowledge check
 
@@ -70,8 +101,6 @@ For responsible automated use, a research object may need:
 2. FAIR requires patient-level data to be publicly downloadable.
 3. FAIR applies to workflows and software as well as datasets.
 4. Machine-readable and scientifically interpretable mean the same thing.
-
-Discuss the answers before opening the next module.
 
 ## Key takeaways
 

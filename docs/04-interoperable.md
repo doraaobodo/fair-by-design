@@ -10,10 +10,6 @@ description: "Understand FAIR interoperability through NCBI BioProject, BioSampl
 
 > Data are interoperable when different systems and researchers can exchange information and understand what it means.
 
-## 1. The three Interoperability sub-principles
-
-The original FAIR Guiding Principles (Wilkinson et al., 2016) define:
-
 <p align="center">
   <img
     src="{{ '/assets/04_Interoperable_SubPrinciples.png' | relative_url }}"
@@ -24,7 +20,7 @@ The original FAIR Guiding Principles (Wilkinson et al., 2016) define:
 
 **Remember:** I1 is about a common way to express information; I2 is about shared meanings for terms; I3 is about meaningful links between research objects. All three work together.
 
-## 2. Sharing words is not the same as sharing meaning
+## Sharing words is not the same as sharing meaning
 
 Interoperability operates via several different layers:
 
@@ -36,7 +32,7 @@ Interoperability operates via several different layers:
   /><br>
 </p>
 
-## 3. Controlled vocabularies and ontologies: agreeing on meaning
+## Controlled vocabularies and ontologies: agreeing on meaning
 
 Suppose one dataset records `ALL`, another records `acute lymphoblastic leukemia`, and a third uses a standardized disease concept identifier. A human may recognize the relationship, but software needs explicit rules or mappings to know whether the terms mean the same thing in context.
 
@@ -88,7 +84,7 @@ NCBI resources provide a practical example of connected research records. They s
 **Important distinction:** Cross-references are a major *step toward* interoperability, especially I3, but links alone do not guarantee full semantic interoperability. The meaning and structure of the linked records must also be clear.
 
 
-## 5. Interoperability with Machines
+## Interoperability with Machines
 
 At the heart of FAIR interoperability is **machine-actionability**—the capacity of computational systems to find, access, parse, and combine data **without a human first reading a README file or manually reformatting columns**. 
 
@@ -187,25 +183,39 @@ and standardized ontology terms gets you 80% of the way there. RDF and knowledge
 graphs become essential when you are integrating large, messy, heterogeneous 
 datasets across multiple institutions or domains at scale.
 
-## 6. Workshop activity: Make our dataset more interoperable (6 minutes)
+## Activity (optional): Make our dataset more interoperable (6 minutes)
 
 Return to [`final_data_v2_REALLYFINAL.csv`]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}).
 
 **Scenario:** A second team has a dataset with fields `subject_id`, `diagnosis`, `response_category`, `gene_symbol`, `expression_value`, and `collection_day`. They want to combine it with our dataset.
 
-**Individually or with a neighbor (3 minutes):**
+**### Part A - Mapping two datasets(3 minutes):**
 
 1. Choose **two columns** in our original dataset (such as `dx` and `resp`). For each, propose a clearer field name and state **what information you must confirm before mapping it**.
 2. Suggest one shared identifier or controlled vocabulary that could help the datasets communicate.
 3. Describe one relationship that should be recorded explicitly, such as `sample S01 belongs to participant P01` or `expression measurement was generated from sample S01`.
 
-**Whole-room discussion (3 minutes):**
+**### Part B — Discussion (3 minutes):**
 
 - Which changes improve *technical* interoperability? Which improve *semantic* interoperability?
 - Why is it dangerous to assume that matching variable names imply matching meanings?
 - How would you represent the sample-to-participant relationship so software can use it safely?
 
-**Deliverable:** Two proposed field mappings, one vocabulary/identifier strategy, and one explicitly described relationship. Record uncertainties rather than inventing definitions.
+## Knowledge Check
+
+**True or false?**
+
+1. If two datasets are stored as CSV files, they are automatically interoperable because most software can read them.
+
+2. Two datasets that use different variable names, such as `resp = 1` and `response = CR`, can be safely combined without knowing how those variables are defined.
+
+3. Controlled vocabularies and ontologies help researchers and computational systems interpret data consistently by providing shared definitions for scientific concepts.
+
+4. To make research data interoperable, researchers must convert all their datasets into RDF or build a knowledge graph.
+
+5. Linking a BioSample record to an SRA experiment using stable identifiers and clearly defined relationships can support interoperability between NCBI resources.
+
+6. Interoperability involves more than exchanging files; it also requires understanding the meaning and relationships of the information being exchanged.
 
 ## Key takeaways
 
@@ -224,6 +234,7 @@ Return to [`final_data_v2_REALLYFINAL.csv`]({{ '/exercises/data/final_data_v2_RE
 - [W3C RDF 1.1 Primer](https://www.w3.org/TR/rdf11-primer/)
 - [FAIRsharing](https://fairsharing.org/)
 
+Knowledge Check Answer Key: 0,0,1,0,1,1
 ---
 
 [← Findable and Accessible]({{ '/docs/03-findable-accessible.html' | relative_url }}) | [Next: Reusable and Reproducible →]({{ '/docs/05-reusable.html' | relative_url }})

@@ -3,34 +3,34 @@ layout: default
 title: Home
 nav_order: 1
 ---
-# FAIR by Design 101
-**Building Findable, Accessible, Interoperable, and Reusable Research Workflows**
+# FAIR by Design
+<span style="color: red;">**Building Findable, Accessible, Interoperable, and Reusable Research Workflows**</span>
 
-Welcome to **FAIR by Design 101**, a two-hour interactive workshop presented at 
+Welcome to **FAIR by Design**, a two-hour interactive workshop presented at 
 the **Knowledge in Data Science Symposium 2026 (KIDS26)** at St. Jude Children's Research Hospital.
 This workshop introduces practical approaches to improving the 
 findability, accessibility, interoperability, and reusability of 
 biomedical research data and computational workflows.
 
-
-# Introduction
+---
+## Introduction
 
 The FAIR Guiding Principles of Findable, Accessible, Interoperable, and Reusable 
 were introduced in 2016 to provide a framework for improving data stewardship 
 while supporting reproducibility and machine actionability. This workshop will 
 introduce the FAIR data principles as defined by Wilkinson et al 
-(Sci Data, 2016) to the St. Jude data science community and provide strategies 
+[(Sci Data, 2016)](https://doi.org/10.1038/sdata.2016.18) 
+to the St. Jude data science community and provide strategies 
 for incorporating FAIR principles throughout the research data life cycle. 
 Participants will work through a series of facilitated exercises focused on 
-the four FAIR dimensions. We will 1) evaluate metadata and discoverability; 
-2) consider appropriate access mechanisms for sensitive data; 3) address 
+the four FAIR dimensions. We will **1)** evaluate metadata and discoverability; 
+ **2) ** consider appropriate access mechanisms for sensitive data;  **3) ** address 
 interoperability through standardized terminology, formats, and metadata; and 
-4) address reusability through provenance, documentation, data-use information, 
-and reproducible workflows. A final activity will examine FAIR from the 
+ **4) ** address reusability through provenance, documentation, data-use information, 
+and reproducible workflows. Throughout, We will also examine FAIR dimensions from the 
 perspective of computational and AI systems and consider what makes research 
-objects machine-actionable. Participants will also be introduced to the FAIR 
-Cookbook and other practical resources for continuing their FAIRification 
-journey.
+objects machine-actionable. At the end of the workshop, participants will be introduced to the FAIR 
+Cookbook and other practical resources for continuing their FAIRification journey.
 
 ---
 
@@ -46,7 +46,7 @@ practices. No prior experience with FAIR principles or programming is required.
 
 By the end of this workshop, participants will be able to:
 
-1. **Explain FAIR principles:** Describe the four FAIR dimensions and 
+1. **Explain the FAIR principles:** Describe the four FAIR dimensions and 
 distinguish FAIR data from open data.
 
 2. **Identify barriers to reuse:** Evaluate biomedical research data and 
@@ -72,14 +72,14 @@ applicable to their own research.
 | 0:25–0:50 | [Findable and Accessible]({{ '/docs/03-findable-accessible.html' | relative_url }}) | Evaluate metadata, discoverability, identifiers, and access mechanisms |
 | 0:50–1:10 | [Interoperable]({{ '/docs/04-interoperable.html' | relative_url }}) | Explore data standards, controlled vocabularies, formats, and integration challenges |
 | 1:10–1:15 | Break | Five-minute break |
-| 1:15–1:35 | [Reusable and Reproducible]({{ '/docs/05-reusable.html' | relative_url }}) | Examine provenance, documentation, data-use conditions, and reproducible workflows |
+| 1:15–1:35 | [Reusable]({{ '/docs/05-reusable.html' | relative_url }}) | Examine provenance, documentation, data-use conditions, and reproducible workflows |
 | 1:35–1:50 | [FAIR and AI]({{ '/docs/06-ai.html' | relative_url }}) | Discuss how computational agents discover, interpret, and appropriately reuse research objects |
 | 1:50–2:00 | [FAIR Action Plan and Resources]({{ '/docs/07-action-plan.html' | relative_url }}) | Identify practical FAIR improvements and explore resources for continued learning |
 
 **Total duration:** 120 minutes, including a five-minute break.
 
 
-## Before You Begin
+## Before We Begin
 
 **What You Will Need**
 
@@ -90,7 +90,7 @@ No software installation or GitHub account is required to participate.
 
 **How to Use This Website**
 
-This website serves as both a learning resource and a practical example of FAIR-oriented research documentation.
+This website serves as both a learning resource during the workshop and beyond.
 
 Each module includes:
 

@@ -8,13 +8,8 @@ description: "Findable data, metadata, persistent identifiers, and a guided biom
 
 # Findable: Can someone discover your research data?
 
-
 > Data cannot be reused if potential users cannot discover that it exists. Findability depends on stable identifiers, rich metadata, explicit connections between metadata and data, and searchable registration.
 
-
-## 1. The four Findable sub-principles (F1–F4)
-
-Wilkinson et al., 2016) specify:
 
 <p align="center">
   <img
@@ -22,12 +17,16 @@ Wilkinson et al., 2016) specify:
     alt="Infographic explaining F1 through F4: persistent identifiers, rich metadata, explicit identifier links, and searchable repositories."
     style="width: 100%; height: auto;"
   /><br>
-  <em>Findable Sub-principles</em>
   </p>
   
-**Important distinction:** F1 in the original 2016 publication specifies a *globally unique and persistent identifier*. Some implementation guidance additionally emphasizes that identifiers should be resolvable. The stronger wording is useful in practice, but it is not a verbatim quote of F1.
+**Important distinction:** F1 in the original 2016 publication specifies a *globally unique and persistent identifier*. 
+Some implementation guidance additionally emphasizes that identifiers should be resolvable, 
+meaning that the identifier can be used to retrieve data. 
+For example a DOI is resolvable because pasting it into a browser directs you 
+straight to the research object (publication, etc.) The stronger wording is very 
+useful in practice, but it is not a verbatim quote of F1.
 
-## 2. Metadata is a library catalog record
+## Metadata is like a library catalog record
 
 Imagine a library filled with books but no catalog. The books exist, yet finding the one relevant to your question could take hours. A useful catalog record tells you the title, author, topic, edition, and where the book is held.
 
@@ -40,29 +39,38 @@ Imagine a library filled with books but no catalog. The books exist, yet finding
   <em>Books in a Library are cataloged to make them findable.  </em>
   </p>
 
-**For research data:**
+**For Findable and Accessible research data:**
 
 - **Dataset** = the book or research object itself.
 - **Metadata** = the catalog description that explains what it is.
 - **Persistent identifier** = a stable reference to the object or its landing page.
 - **Searchable repository/catalog** = the discovery system where that description can be found.
 
-A catalog can describe a rare book even if access is restricted. Likewise, a biomedical dataset can have public, non-sensitive metadata while its patient-level data remain access-controlled.
+A catalog can describe a rare book even if access is restricted. Likewise, 
+a biomedical dataset can have public, non-sensitive metadata while its 
+patient-level data remain access-controlled.
 
 **Nugget:** If a dataset is stored safely on a private drive but no one knows it exists, is it Findable?
 
-## 3. What is metadata?
+## What is metadata?
 
-**Metadata is structured information about a research object.** It helps people discover, interpret, manage, connect, and appropriately reuse that object. The ARDC *Findable #2* webinar describes metadata as structured data about data, a primary discovery tool, human-readable and machine-actionable when well organized, and often structured using schemas.
+**Metadata is structured information about a research object.** It helps people 
+discover, interpret, manage, connect, and appropriately reuse that object. 
+The ARDC *Findable #2* webinar describes metadata as structured data about data, 
+a primary discovery tool, human-readable and machine-actionable when well organized, 
+and often structured using schemas.
 
-Metadata can describe datasets, files, specimens, software, analytical workflows, publications, and more. 
+Metadata can describe datasets, files, specimens, software, analytical workflows, 
+publications, and more. 
 
-**Metadata is not merely a README.** A README can be useful human-readable documentation, while a structured metadata record supports consistent indexing and machine processing.
+**Metadata is not merely a README.** A README can be useful human-readable 
+documentation, while a structured metadata record supports consistent 
+indexing and machine processing.
 
 ### Types of metadata
 
-The ARDC webinar, drawing on Jenn Riley's *Understanding Metadata* (2017), distinguishes descriptive, structural, and administrative metadata. Administrative metadata can include technical, rights/access, and preservation information.
-
+Jenn Riley's *Understanding Metadata* (2017), distinguishes descriptive, 
+structural, and administrative metadata. 
 
 <p align="center">
   <img
@@ -72,7 +80,7 @@ The ARDC webinar, drawing on Jenn Riley's *Understanding Metadata* (2017), disti
   /><br>
   </p>
 
-**Caution:** These are useful categories, not mutually exclusive boxes. A DOI, for example, may appear in descriptive and technical contexts.
+**Caution:** THESE CATEGORIES ARE NOT MUTUALLY EXCLUSIVE. A DOI, for example, may appear in descriptive and technical contexts.
 
 ### Metadata at different levels
 
@@ -88,7 +96,7 @@ A dataset may need metadata at several levels:
 
 **Example:** A catalog record might say that a dataset contains synthetic leukemia gene-expression and response variables. A separate data dictionary is still needed to explain whether `resp = 1` means response or non-response and what `val = 8.2` measures. Do not infer these meanings from the filename or column names.
 
-## 4. From metadata fields to metadata schemas
+## From metadata fields to metadata schemas
 
 A **metadata schema** specifies which fields exist, what they mean, and often how their values are represented. Shared schemas make records more consistent and easier for discovery services to index.
 
@@ -110,7 +118,7 @@ A human-readable description:
 
 > Synthetic study of gene expression and treatment response in fictional pediatric leukemia records. Variables include `PtID`, `dx`, `resp`, `sample`, `gene`, `val`, `day`, and `grp`. Definitions are incomplete.
 
-A simple **illustrative YAML metadata record** (not a complete DataCite deposit):
+A simple structured metadata record (YAML file):
 
 ```yaml
 title: "Synthetic pediatric leukemia expression and response teaching dataset"
@@ -151,18 +159,18 @@ A **Digital Object Identifier (DOI)** is a persistent identifier commonly used f
 > **Think about F3:** If a metadata record has its own identifier, how does it explicitly identify the dataset it describes? Make that relationship clear in the metadata rather than relying only on a human-readable sentence.
 
 
->**NOTE** NLM DATA SHARING RESOURCES: A repository of repositories! (https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html)
+>**NOTE:** NLM Data Sharing Resources. A repository of repositories! https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html
 
-## 6. Guided activity: Make our dataset more Findable (8 minutes)
-**Quick prompt:** A dataset has a filename and a shareable folder URL. Which Findable requirements, if any, does that establish?
+## 6. Activity: Make our dataset more Findable (8 minutes)
+**Prompt:** A dataset has a filename and a shareable folder URL. Which Findable requirements, if any, does that establish?
 
 **Scenario:** Return to the fictional file [`final_data_v2_REALLYFINAL.csv`]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}) from the Data Reuse Challenge. Its short [`README`]({{ '/exercises/data/README.html' | relative_url }}) is deliberately incomplete.
 
 **Do not invent clinical definitions.** If the original study did not specify what `resp`, `val`, or `grp` mean, mark them as **unknown—requires clarification**.
 
-### Part A — Draft a catalog record (4 minutes)
+### Part A — Draft a catalog record
 
-Working individually or in pairs, propose values for the following fields:
+Propose values for the following fields:
 
 | Metadata field | Your proposed entry |
 |:--|:--|
@@ -177,9 +185,7 @@ Working individually or in pairs, propose values for the following fields:
 | Access conditions | |
 | Missing information requiring clarification | |
 
-Use the [Findable metadata worksheet]({{ '/exercises/templates/findable-metadata-worksheet.md' | relative_url }}) if you want to copy the fields into your own notes.
-
-### Part B — Discussion (4 minutes)
+### Part B — Discussion 
 
 1. Which three metadata fields most improved your ability to discover this dataset?
 2. What can you fill in confidently, and what must remain unknown?

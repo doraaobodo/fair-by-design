@@ -15,8 +15,34 @@ with treatment response in a clinical trial. A collaborator sends you a CSV
 file from a previous study and a short README. Assess whether these records are 
 adequate to support a new analysis. 
 
-Open the [CSV]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}) and 
-[README.txt]({{ '/exercises/data/README.txt' | relative_url }}) files. Try to answer:
+Open the [CSV]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}) 
+also available [here](https://github.com/doraaobodo/fair-by-design/blob/main/exercises/data/final_data_v2_REALLYFINAL.csv) 
+
+| PtID | dx | resp | sample | gene | val | day | grp |
+| :--- | :--- | :---: | :--- | :--- | :---: | :---: | :---: |
+| P01 | ALL | 1 | S01 | GATA3 | 8.2 | 0 | A |
+| P02 | ALL | 0 | S02 | GATA3 | 3.7 | 7 | B |
+| P03 | AML | 1 | S03 | GATA3 | NA | 0 | A |
+| P04 | ALL | 2 | S04 | STAT5A | 12.1 | 14 | B |
+| P05 | AML | 0 | S05 | STAT5A | 5.4 | 7 | A |
+| P06 | ALL | 1 | S06 | GATA3 | 6.0 | 14 | B |
+| P07 | ALL | | S07 | STAT5A | 9.3 | 0 | A |
+| P08 | AML | 1 | S08 | GATA3 | 4.8 | 7 | B |
+
+and [README.txt]({{ '/exercises/data/README.txt' | relative_url }}) 
+
+```
+# Study data
+
+File: `final_data_v2_REALLYFINAL.csv`
+
+Contains study samples and expression values. Some values may be missing. 
+
+This is the latest file we used for analysis.
+
+Contact the original team if you have questions.
+```
+Try to answer:
 
 1. What does each column mean, and what units or coding conventions are used?
 2. Which samples or observations can legitimately be compared?
@@ -32,9 +58,9 @@ Open the [CSV]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url
 ## Discussion
 
 Share one thing you **can** infer and one thing you **cannot safely infer** from 
-the files. Which missing information would you ask the collaborator to provide?
+the files. 
 
-**Key Point 1: Data can be technically readable but scientifically uninterpretable.**
+**1. Data can be technically readable but scientifically uninterpretable.**
 
 It is obvious someone sub-coded the data. Without a data dictionary, we cannot confidently interpret these values.
 
@@ -53,7 +79,7 @@ by `day`, and whether `grp` represents a treatment group, experimental batch, or
 patient subgroup.
 
 
-**Key Point 2: Computational systems can process data without understanding its scientific meaning**
+**2. Computational systems can process data without understanding its scientific meaning**
 
 A computational agent could successfully load the CSV and complete an analysis 
 while making incorrect assumptions about what the data represents.
@@ -105,8 +131,3 @@ FAIR is about improving the ability of people and machines to find, access,
 interpret, and reuse research objects appropriately. 
 
 **Next:** [FAIR Foundations]({{ '/docs/02-fair-foundations.html' | relative_url }})
-
-
-TODO:
-Change up scenario
-Add color/pictures to the md file.
