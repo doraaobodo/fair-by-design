@@ -83,7 +83,7 @@ changes over time, and may behave differently across environments.
 The broader [FAIR4RS principles](https://doi.org/10.15497/RDA00068) 
 adapt FAIR thinking specifically to research software.
 
-<span style="color: green;">### Standardizing code and data management practices as part of a lab manual</span>
+### <span style="color: green;">Standardizing code and data management practices as part of a lab manual</span>
 
 Imagine a lab manual that establishes these shared practices.
 Here is an example of a lab manual that is a living document of software approach in an Epidemiology lab: [Jade Benjamin-Chung, Stanford](https://github.com/jadebc/lab-manual)
@@ -162,7 +162,7 @@ Borrowed from [Jade Benjamin Chung Lab Manual Chapter 7](https://jadebc.github.i
 
 Adapted from [Jade Benjamin Chung Lab Manual Chapter 4](https://jadebc.github.io/lab-manual/reproducibility.html)
 
-## 3. Provenance: the research object's history
+## Provenance: the research object's history
 
 **Provenance** is the documented history of where a research object came from 
 and how it was generated, processed, and changed. 
