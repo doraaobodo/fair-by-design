@@ -230,7 +230,7 @@ whether it is appropriate for a particular scientific question.
 
 **Provenance supports trustworthy AI in several important ways:**
 
-<u>Data quality and reliability:** Knowing where training or input data originated, 
+<u>Data quality and reliability:</u> Knowing where training or input data originated, 
 how they were collected, and what quality-control procedures were applied helps 
 researchers assess whether the data are suitable for an AI application.
 
@@ -257,7 +257,8 @@ where consent, privacy, and data-use restrictions must be respected.
 
 
 Read more in ["A large-scale audit of dataset licensing and attribution in AI"](https://www.nature.com/articles/s42256-024-00878-8)
-Learn more @ https://www.dataprovenance.org/about 
+
+Learn more at [MIT Data Provenance in AI Project](https://www.dataprovenance.org/about) 
 
 ## Licensing and permissions: what am I allowed to do?
 

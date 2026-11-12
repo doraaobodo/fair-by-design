@@ -142,7 +142,7 @@ files:
 
 This record is **better than a bare CSV**, but it does not yet satisfy every Findable requirement. In particular, the identifier is a placeholder, several variable definitions remain unknown, and the record is not automatically registered in a searchable catalog simply because it appears in a Markdown lesson.
 
-## 5. Persistent identifiers and discovery platforms
+## Persistent identifiers and discovery platforms
 
 A **Digital Object Identifier (DOI)** is a persistent identifier commonly used for publications, datasets, software, and other research objects. A DOI resolves to a landing page where descriptive metadata and access information can be maintained. A DOI does **not** by itself guarantee that the data will remain available forever.
 
@@ -159,7 +159,7 @@ A **Digital Object Identifier (DOI)** is a persistent identifier commonly used f
 > **Think about F3:** If a metadata record has its own identifier, how does it explicitly identify the dataset it describes? Make that relationship clear in the metadata rather than relying only on a human-readable sentence.
 
 
->**NOTE:** NLM Data Sharing Resources. A repository of repositories! https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html
+>**NOTE:** [NLM Data Sharing Resources.](https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html) A repository of repositories!
 
 ## 6. Activity: Make our dataset more Findable (8 minutes)
 **Prompt:** A dataset has a filename and a shareable folder URL. Which Findable requirements, if any, does that establish?
