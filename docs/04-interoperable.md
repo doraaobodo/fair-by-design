@@ -6,7 +6,7 @@ nav_order: 4
 description: "Understand FAIR interoperability through NCBI BioProject, BioSample, and SRA, shared identifiers, vocabularies, RDF, and knowledge graphs."
 ---
 
-# Helping Research Data Speak the Same Language
+# Interoperable: Helping Research Data Speak the Same Language
 
 > Data are interoperable when different systems and researchers can exchange information and understand what it means.
 

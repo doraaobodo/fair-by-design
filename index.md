@@ -21,7 +21,7 @@ biomedical research data and computational workflows.
     alt="FAIR Logo."
     style="width: 100%; height: auto;"
   /><br>
-  </p>
+</p>
 
 The FAIR Guiding Principles of Findable, Accessible, Interoperable, and Reusable 
 were introduced in 2016 to provide a framework for improving data stewardship 
@@ -39,6 +39,34 @@ and reproducible workflows. Throughout, We will also examine FAIR dimensions fro
 perspective of computational and AI systems and consider what makes research 
 objects machine-actionable. At the end of the workshop, participants will be introduced to the FAIR 
 Cookbook and other practical resources for continuing their FAIRification journey.
+
+---
+
+## Why FAIR?
+
+<p align="center">
+  <img
+    src="{{ '/assets/Home_Market_v_Online.png' | relative_url }}"
+    alt="Comparing Marketplace vs Online Shopping."
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
+  /><br>
+</p>
+
+
+FAIR provides a common framework for reducing barriers to data connection and 
+making research information easier for both humans and machines to discover, 
+understand, and build upon. Think of it as giving every dataset a universal 
+passport so it can travel smoothly across labs, disciplines, and software tools.
+
+<p align="center">
+  <img
+    src="{{ '/assets/Home_FAIR_Universal_Passport.png' | relative_url }}"
+    alt="FAIR giving a universal passport to your data."
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
+  /><br>
+</p>
 
 ---
 
@@ -114,7 +142,8 @@ Follow the modules in order during the workshop or explore them independently af
   <img
     src="{{ '/assets/Home_Sticky_Note_Task.png' | relative_url }}"
     alt="Sticky Note Task Logo"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 

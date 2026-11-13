@@ -6,7 +6,7 @@ nav_order: 5
 description: "FAIR Reusability, provenance, research software, licensing, and reproducible biomedical workflows."
 ---
 
-# Can Someone Build on Your Research?
+# Reusable: Can Someone Build on Your Research?
 
 > Could another scientist use your data, code, and documentation to evaluate your results, understand their limitations, and responsibly pursue a new research question?
 
