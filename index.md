@@ -144,3 +144,7 @@ Please consult the repository's license and attribution information before adapt
 Questions, suggestions, and contributions are welcome.
 
 Visit the [GitHub repository](https://github.com/doraaobodo/fair-by-design) to explore the source materials or suggest improvements.
+
+---
+
+[Next: Data Reuse Challenge →]({{ '/docs/01-reuse-challenge.html' | relative_url }})

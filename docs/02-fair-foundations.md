@@ -31,6 +31,7 @@ Alternatively, [View/Download PDF in new tab]({{ '/docs/FAIR_Research_Data_Works
 ### Looking back at the dataset
 
 res.csv:
+
 | PtID | dx | resp | sample | gene | val | day | grp |
 | :--- | :--- | :---: | :--- | :--- | :---: | :---: | :---: |
 | P01 | ALL | 1 | S01 | GATA3 | 8.2 | 0 | A |
@@ -43,6 +44,7 @@ res.csv:
 | P08 | AML | 1 | S08 | GATA3 | 4.8 | 7 | B |
 
 README.txt
+
 ```
 # Study data
 
@@ -56,7 +58,7 @@ Contact the original team if you have questions.
 ```
 
 Download [CSV]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}) 
-(also available [here])(https://github.com/doraaobodo/fair-by-design/blob/main/exercises/data/final_data_v2_REALLYFINAL.csv) 
+(also available [here](https://github.com/doraaobodo/fair-by-design/blob/main/exercises/data/final_data_v2_REALLYFINAL.csv)) 
 and [README.txt]({{ '/exercises/data/README.txt' | relative_url }}). 
 
 
@@ -95,5 +97,6 @@ and [README.txt]({{ '/exercises/data/README.txt' | relative_url }}).
 <!-- - [FAIR Cookbook](https://faircookbook.elixir-europe.org/)
 - [FAIRsharing](https://fairsharing.org/) -->
 
+---
 
-[← Module 1: Data Reuse Challenge]({{ '/docs/01-reuse-challenge.html/' | relative_url }}) | [Next: Findable and Accessible →]({{ '/docs/03-findable-accessible.html' | relative_url }})
+[← Data Reuse Challenge]({{ '/docs/01-reuse-challenge.html/' | relative_url }}) | [Next: Findable and Accessible →]({{ '/docs/03-findable-accessible.html' | relative_url }})
