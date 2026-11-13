@@ -25,7 +25,8 @@ validation remains essential.
   <img
     src="{{ '/assets/05_Reusable_SubPrinciples.png' | relative_url }}"
     alt="Reusable Sub-principles"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -40,7 +41,8 @@ Good documentation must describe the *actual* data, methods, decisions, and cond
   <img
     src="{{ '/assets/05_Reusable_F2_vs_R1_Shopping.png' | relative_url }}"
     alt="F2 vs R1 Shopping Analogy"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -66,7 +68,8 @@ inappropriate for a new cohort.
   <img
     src="{{ '/assets/05_Reusable_Reusability_Replicability_Reproducibility.png' | relative_url }}"
     alt="Compare Reusability_Replicability_Reproducibility"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -156,7 +159,8 @@ Borrowed from [Jade Benjamin Chung Lab Manual Chapter 7](https://jadebc.github.i
   <img
     src="{{ '/assets/05_Reusable_FAIR_Software_Workflows.png' | relative_url }}"
     alt="FAIR_Software_Workflows"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -178,7 +182,8 @@ or software version might explain the difference.
   <img
     src="{{ '/assets/05_Reusable_FASTQ_Provenance.png' | relative_url }}"
     alt="FAIR_Software_Workflows"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -202,7 +207,8 @@ which **used** `counts.tsv` and **wasAssociatedWith** an analysis pipeline.
   <img
     src="{{ '/assets/05_Reusable_W3C_Prov_Model.png' | relative_url }}"
     alt="The W3C Prov model"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -223,7 +229,8 @@ whether it is appropriate for a particular scientific question.
   <img
     src="{{ '/assets/05_Reusable_AI_Provenance.jpg' | relative_url }}"
     alt="Data Provenance in AI "
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -276,7 +283,8 @@ Distinguish these questions:
   <img
     src="{{ '/assets/05_Reusable_Licensing.png' | relative_url }}"
     alt="Reusable Licensing "
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -366,7 +374,7 @@ convention, a review checklist, or a procedure for recording provenance.
 **Good habits become powerful when they are part of the normal research workflow rather than an extra step at publication.**
 
 ## Activity (optional): make our leukemia dataset reusable (5 minutes)
-
+<!-- 
 Return to the synthetic dataset from [Module 1]({{ '/docs/01-reuse-challenge.html' | relative_url }}). 
 Imagine another research team wants to examine whether expression values are associated with treatment response.
 
@@ -374,10 +382,20 @@ Imagine another research team wants to examine whether expression values are ass
 1. **R1 — Context:** What three pieces of information are missing that would most affect whether the data are suitable for a new analysis?
 2. **R1.1 — Rights:** What reuse or access conditions would you need to clarify before sharing the data?
 3. **R1.2 — Provenance:** Sketch a plausible *hypothetical* processing chain for `val`. Which steps and versions would need to be confirmed with the original researchers?
-4. **R1.3 — Standards:** Which data dictionary fields, assay standards, or clinical response definitions should be documented?
 5. **Software:** Name two files or practices that would help someone rerun the original analysis.
 
 *Do not invent facts about the dataset.* Label unknowns explicitly, and distinguish a proposed metadata field from a verified value.
+-->
+
+
+<p align="center">
+  <img
+    src="{{ '/assets/05_Reusable_Sticky_Notes_Task.png' | relative_url }}"
+    alt="Reusable Sticky Note Task/ KNowledge Check True of False"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
+  /><br>
+</p>
 
 ## Key takeaways
 

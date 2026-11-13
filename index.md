@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 ---
 # FAIR by Design
-<span style="color: red;">**Building Findable, Accessible, Interoperable, and Reusable Research Workflows**</span>
+<span style="color: purple;">**Building Findable, Accessible, Interoperable, and Reusable Research Workflows**</span>
 
 Welcome to **FAIR by Design**, a two-hour interactive workshop presented at 
 the **Knowledge in Data Science Symposium 2026 (KIDS26)** at St. Jude Children's Research Hospital.
@@ -15,6 +15,14 @@ biomedical research data and computational workflows.
 ---
 ## Introduction
 
+<p align="center">
+  <img
+    src="{{ '/assets/Home_fair_logo.png' | relative_url }}"
+    alt="FAIR Logo."
+    style="width: 100%; height: auto;"
+  /><br>
+  </p>
+
 The FAIR Guiding Principles of Findable, Accessible, Interoperable, and Reusable 
 were introduced in 2016 to provide a framework for improving data stewardship 
 while supporting reproducibility and machine actionability. This workshop will 
@@ -24,9 +32,9 @@ to the St. Jude data science community and provide strategies
 for incorporating FAIR principles throughout the research data life cycle. 
 Participants will work through a series of facilitated exercises focused on 
 the four FAIR dimensions. We will **1)** evaluate metadata and discoverability; 
- **2) ** consider appropriate access mechanisms for sensitive data;  **3) ** address 
+ **2)** consider appropriate access mechanisms for sensitive data;  **3)** address 
 interoperability through standardized terminology, formats, and metadata; and 
- **4) ** address reusability through provenance, documentation, data-use information, 
+ **4)** address reusability through provenance, documentation, data-use information, 
 and reproducible workflows. Throughout, We will also examine FAIR dimensions from the 
 perspective of computational and AI systems and consider what makes research 
 objects machine-actionable. At the end of the workshop, participants will be introduced to the FAIR 
@@ -95,13 +103,22 @@ Each module includes:
 
 - An introduction to key concepts
 - Practical examples from biomedical research
-- Guided activities or discussion questions
+- Guided activities or discussion questions (Sticky Note Task)
 - Key takeaways and additional resources
 
 Follow the modules in order during the workshop or explore them independently afterward.
 
 ---
 
+<p align="center">
+  <img
+    src="{{ '/assets/Home_Sticky_Note_Task.png' | relative_url }}"
+    alt="Sticky Note Task Logo"
+    style="width: 100%; height: auto;"
+  /><br>
+</p>
+
+<!-- 
 ## Resources and Further Reading
 
 - [The FAIR Guiding Principles — Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18)
@@ -109,7 +126,7 @@ Follow the modules in order during the workshop or explore them independently af
 - [FAIRsharing](https://fairsharing.org/)
 - [GO FAIR Initiative](https://www.go-fair.org/)
 - [EMBL-EBI Training](https://www.ebi.ac.uk/training/) 
-
+-->
 ---
 
 ## Citation and Reuse

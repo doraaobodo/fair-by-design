@@ -30,7 +30,7 @@ Alternatively, [View/Download PDF in new tab]({{ '/docs/FAIR_Research_Data_Works
 ---
 ### Looking back at the dataset
 
-
+res.csv:
 | PtID | dx | resp | sample | gene | val | day | grp |
 | :--- | :--- | :---: | :--- | :--- | :---: | :---: | :---: |
 | P01 | ALL | 1 | S01 | GATA3 | 8.2 | 0 | A |
@@ -42,8 +42,7 @@ Alternatively, [View/Download PDF in new tab]({{ '/docs/FAIR_Research_Data_Works
 | P07 | ALL | | S07 | STAT5A | 9.3 | 0 | A |
 | P08 | AML | 1 | S08 | GATA3 | 4.8 | 7 | B |
 
-and [README.txt]({{ '/exercises/data/README.txt' | relative_url }}) 
-
+README.txt
 ```
 # Study data
 
@@ -56,51 +55,29 @@ This is the latest file we used for analysis.
 Contact the original team if you have questions.
 ```
 
-Which FAIR dimension would you address first? Or, which missing piece of 
-information in the leukemia dataset would you ask its creator for first?
-There is no single correct answer: the dimensions are related, but improvements can be incremental.
+Download [CSV]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}) 
+(also available [here])(https://github.com/doraaobodo/fair-by-design/blob/main/exercises/data/final_data_v2_REALLYFINAL.csv) 
+and [README.txt]({{ '/exercises/data/README.txt' | relative_url }}). 
 
-| Principle | Core idea | How to Address in fictional dataset |
+
+| Principle | Core idea | How to address in dataset |
 |:--|:--|:--|
 | **F — Findable** | Data and metadata have persistent identifiers, rich descriptions, and can be discovered through searchable resources. | Give the dataset a stable identifier and searchable description including study design and data types. |
 | **A — Accessible** | Data or metadata can be retrieved through defined, standardized methods; authentication and authorization can be required. | Publish an access-request procedure while retaining sensitive records in a controlled environment. |
 | **I — Interoperable** | Data and metadata use shared representations, vocabularies, and meaningful links to other research objects. | Define `dx` using a documented disease terminology; state what `resp` codes mean. |
 | **R — Reusable** | Data and metadata provide sufficient context, provenance, use conditions, and community-standard descriptions. | Document how `val` was measured and processed, what `NA` means, and which uses are permitted. |
 
-Our example file includes `PtID`, `dx`, `resp`, `sample`, `gene`, `val`, `day`, and `grp`. These labels may seem familiar, but they do not communicate all the information necessary for safe interpretation or integration.
-
-
-## FAIR for Sensitive Data
-
-Consider two distinct objects:
-
-1. **Public metadata record:** title, summary, data types, identifier, steward, and access instructions.
-2. **Controlled-access dataset:** sensitive records provided only to approved users under appropriate conditions.
-
-What information about our fictional leukemia dataset could be safely described in a public catalog without exposing individual-level records?
-
-
-## FAIR for machines and AI
-
-FAIR emphasizes **machine-actionability**: the extent to which software can discover, evaluate, and appropriately use a digital research object based on explicit, structured information.
-
-For responsible automated use, a research object may need:
-
-- Explicit variable definitions and permitted values
-- Structured, machine-readable metadata
-- Stable identifiers and relationships among datasets, code, and methods
-- Provenance, units, processing information, and use restrictions
-
-If an AI agent were asked to identify genes associated with better treatment response, what should it check *before* analyzing this CSV?
 
 ## Knowledge check
 
-**True or false?**
-
-1. A CSV file is automatically FAIR because most tools can read it.
-2. FAIR requires patient-level data to be publicly downloadable.
-3. FAIR applies to workflows and software as well as datasets.
-4. Machine-readable and scientifically interpretable mean the same thing.
+<p align="center">
+  <img
+    src="{{ '/assets/02_FAIR_Foundations_Sticky_Note_Task.png' | relative_url }}"
+    alt="FAIR Foundations Sticky Note Task."
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
+  /><br>
+</p>
 
 ## Key takeaways
 

@@ -8,16 +8,23 @@ description: "A ten-minute interactive exercise on the barriers to biomedical da
 
 ## The Data Reuse Challenge
 
-**Can you reuse this dataset?**
 
-**Scenario:** You are studying whether gene-expression patterns are associated 
+> **Scenario:** You are studying whether gene-expression patterns are associated 
 with treatment response in a clinical trial. A collaborator sends you a CSV 
 file from a previous study and a short README. Assess whether these records are 
-adequate to support a new analysis. 
+adequate to support a new analysis. Review the contents of each file.
 
-Open the [CSV]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}) 
-also available [here](https://github.com/doraaobodo/fair-by-design/blob/main/exercises/data/final_data_v2_REALLYFINAL.csv) 
+<p align="center">
+  <img
+    src="{{ '/assets/01_Data_Reuse_Challenge_Sticky_Note_Task.png' | relative_url }}"
+    alt="Data Reuse Challenge Sticky Note Task."
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
+  /><br>
+</p>
 
+
+res.csv:
 | PtID | dx | resp | sample | gene | val | day | grp |
 | :--- | :--- | :---: | :--- | :--- | :---: | :---: | :---: |
 | P01 | ALL | 1 | S01 | GATA3 | 8.2 | 0 | A |
@@ -29,8 +36,7 @@ also available [here](https://github.com/doraaobodo/fair-by-design/blob/main/exe
 | P07 | ALL | | S07 | STAT5A | 9.3 | 0 | A |
 | P08 | AML | 1 | S08 | GATA3 | 4.8 | 7 | B |
 
-and [README.txt]({{ '/exercises/data/README.txt' | relative_url }}) 
-
+README.txt: 
 ```
 # Study data
 
@@ -42,14 +48,10 @@ This is the latest file we used for analysis.
 
 Contact the original team if you have questions.
 ```
-Try to answer:
 
-1. What does each column mean, and what units or coding conventions are used?
-2. Which samples or observations can legitimately be compared?
-3. What does `resp` mean, and when was it measured?
-4. Can you trace the origin of the measurements and the processing steps?
-5. Are you permitted to share, analyze, or combine these records with other datasets?
-6. Would you use this dataset in a publication-quality analysis today? Why or why not?
+Download [CSV]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}) 
+(also available [here])(https://github.com/doraaobodo/fair-by-design/blob/main/exercises/data/final_data_v2_REALLYFINAL.csv) 
+and [README.txt]({{ '/exercises/data/README.txt' | relative_url }}). 
 
 **Note** If the links open in your browser, you can use **Save As** to download them. 
 
@@ -57,12 +59,19 @@ Try to answer:
 
 ## Discussion
 
-Share one thing you **can** infer and one thing you **cannot safely infer** from 
-the files. 
+**Data can be technically readable but scientifically uninterpretable.**
 
-**1. Data can be technically readable but scientifically uninterpretable.**
+<p align="center">
+  <img
+    src="{{ '/assets/01_Data_Reuse_Challenge_Readable_not_equal_to_Interpretable.png' | relative_url }}"
+    alt="Readable does not equal Interpretable"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
+  /><br>
+</p>
 
-It is obvious someone sub-coded the data. Without a data dictionary, we cannot confidently interpret these values.
+There are some things one *can* infer and *cannot safely infer* from 
+the files. Without a data dictionary, we cannot confidently interpret the values.
 
 An incorrect assumption could reverse the interpretation of an association 
 between gene expression and treatment response, potentially leading to an 
@@ -79,55 +88,31 @@ by `day`, and whether `grp` represents a treatment group, experimental batch, or
 patient subgroup.
 
 
-**2. Computational systems can process data without understanding its scientific meaning**
-
-A computational agent could successfully load the CSV and complete an analysis 
+Similarly, an AI agent also requires a data dictionary! Perhaps even more than the human.
+An agent could successfully load the CSV and complete an analysis 
 while making incorrect assumptions about what the data represents.
 
 Imagine an AI agent is asked: "Identify genes associated with 
 improved treatment response in this dataset." The agent reads the CSV, assumes 
 `resp = 2` represents the best outcome, and ranks genes accordingly.
 
-What if resp = 2 actually represents disease progression?
-
-
-The AI Agent also requires a data dictionary! Perhaps even more than the human.
-
-
-**Key Point 3: This data contains patient-level data. FAIR principle of** 
-**'Accessible' means data should be as open as appropriate and as restricted as** 
-**necessary, with clear and consistent access mechanisms.**
-
-A dataset can be FAIR without being openly accessible to everyone.
-
-For example, a research team could publish a publicly accessible dataset record containing:
-- A descriptive title and summary of the research.
-- Information about the study design and data types.
-- Non-sensitive metadata describing available variables.
-- The name of the responsible institution or data steward.
-- Instructions for requesting access.
-- Eligibility criteria and applicable data-use restrictions.
-- Information about the required approval process.
-
-The underlying patient-level data could remain in a secure, controlled-access 
-environment.A researcher could discover that the dataset exists, understand its 
-general contents, and determine how to request access without being able to 
-download sensitive patient information.
+What if `resp = 2` actually represents disease progression?
 
 ---
 
-### Connection to FAIR
+### Connection to FAIR Guiding Principles
 
+<p align="center">
+  <img
+    src="{{ '/assets/01_Data_Reuse_Challenge_FAIR_Connection.png' | relative_url }}"
+    alt="Data Reuse challenge connection to FAIR."
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
+  /><br>
+</p>
 
-| FAIR dimension | Question raised by this example |
-|---|---|
-| **Findable** | Could a new researcher discover and identify this dataset? |
-| **Accessible** | Is there a clear, appropriate process for retrieving the dataset and its metadata? |
-| **Interoperable** | Are field definitions, units, identifiers, and vocabularies clear enough to integrate with other data? |
-| **Reusable** | Are provenance, methods, usage conditions, and documentation sufficient for responsible reuse? |
-
-**Key takeaway:** A file can be downloadable and still be difficult or inappropriate to reuse. 
+**Key takeaway:**  
 FAIR is about improving the ability of people and machines to find, access, 
 interpret, and reuse research objects appropriately. 
 
-**Next:** [FAIR Foundations]({{ '/docs/02-fair-foundations.html' | relative_url }})
+[Next: FAIR Foundations →]({{ '/docs/02-fair-foundations.html' | relative_url }})

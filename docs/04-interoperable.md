@@ -14,7 +14,8 @@ description: "Understand FAIR interoperability through NCBI BioProject, BioSampl
   <img
     src="{{ '/assets/04_Interoperable_SubPrinciples.png' | relative_url }}"
     alt="Interoperable Sub-principles"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -28,7 +29,8 @@ Interoperability operates via several different layers:
   <img
     src="{{ '/assets/04_Interoperable_Layers_of_Interoperability.png' | relative_url }}"
     alt="Interoperability Layers"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -52,7 +54,8 @@ NCBI resources provide a practical example of connected research records. They s
   <img
     src="{{ '/assets/04_Interoperable_Bioproject_with_Interop.jpg' | relative_url }}"
     alt="Interoperability Bioproject"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
 </p>
 
@@ -151,7 +154,8 @@ contraindications, and off-label uses.
   <img
     src="{{ '/assets/04_Interoperable_PRIMEKG.jpg' | relative_url }}"
     alt="PRIMEKG Figure 2"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
   <em>PrimeKG (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9893183/">PMID: 36732524</a>)   
   Components. (a) Shown are 20 primary data resources curated to 
@@ -183,6 +187,7 @@ and standardized ontology terms gets you 80% of the way there. RDF and knowledge
 graphs become essential when you are integrating large, messy, heterogeneous 
 datasets across multiple institutions or domains at scale.
 
+<!-- 
 ## Activity (optional): Make our dataset more interoperable (6 minutes)
 
 Return to [`final_data_v2_REALLYFINAL.csv`]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}).
@@ -200,22 +205,18 @@ Return to [`final_data_v2_REALLYFINAL.csv`]({{ '/exercises/data/final_data_v2_RE
 - Which changes improve *technical* interoperability? Which improve *semantic* interoperability?
 - Why is it dangerous to assume that matching variable names imply matching meanings?
 - How would you represent the sample-to-participant relationship so software can use it safely?
+-->
 
 ## Knowledge Check
 
-**True or false?**
-
-1. If two datasets are stored as CSV files, they are automatically interoperable because most software can read them.
-
-2. Two datasets that use different variable names, such as `resp = 1` and `response = CR`, can be safely combined without knowing how those variables are defined.
-
-3. Controlled vocabularies and ontologies help researchers and computational systems interpret data consistently by providing shared definitions for scientific concepts.
-
-4. To make research data interoperable, researchers must convert all their datasets into RDF or build a knowledge graph.
-
-5. Linking a BioSample record to an SRA experiment using stable identifiers and clearly defined relationships can support interoperability between NCBI resources.
-
-6. Interoperability involves more than exchanging files; it also requires understanding the meaning and relationships of the information being exchanged.
+<p align="center">
+  <img
+    src="{{ '/assets/04_Interoperable_Sticky_Note_Task.png' | relative_url }}"
+    alt="Interoperability Sticky Note Task/ KNowledge Check True of False"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
+  /><br>
+</p>
 
 ## Key takeaways
 

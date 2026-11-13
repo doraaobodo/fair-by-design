@@ -14,10 +14,11 @@ description: "Findable data, metadata, persistent identifiers, and a guided biom
 <p align="center">
   <img
     src="{{ '/assets/03_Findable_and_Accessible_Findable_SubPrinciples.png' | relative_url }}"
-    alt="Infographic explaining F1 through F4: persistent identifiers, rich metadata, explicit identifier links, and searchable repositories."
-    style="width: 100%; height: auto;"
+    alt="Infographic explaining F1 through F4."
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
-  </p>
+</p>
   
 **Important distinction:** F1 in the original 2016 publication specifies a *globally unique and persistent identifier*. 
 Some implementation guidance additionally emphasizes that identifiers should be resolvable, 
@@ -34,10 +35,11 @@ Imagine a library filled with books but no catalog. The books exist, yet finding
   <img
     src="{{ '/assets/03_Findable_and_Accessible_Bookshelf_to_Catalog_Record.png' | relative_url }}"
     alt="Book to Library Catalog."
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
   <em>Books in a Library are cataloged to make them findable.  </em>
-  </p>
+</p>
 
 **For Findable and Accessible research data:**
 
@@ -76,7 +78,8 @@ structural, and administrative metadata.
   <img
     src="{{ '/assets/03_Findable_and_Accessible_Metadata_Types.png' | relative_url }}"
     alt="Metadata Types."
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
   </p>
 
@@ -90,7 +93,8 @@ A dataset may need metadata at several levels:
   <img
     src="{{ '/assets/03_Findable_and_Accessible_Metadata_Levels.png' | relative_url }}"
     alt="Metadata Levels."
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
   </p>
 
@@ -107,7 +111,8 @@ For biomedical research, the most appropriate schema or minimum-information chec
   <img
     src="{{ '/assets/03_Findable_and_Accessible_Bioproject_schema.jpg' | relative_url }}"
     alt="BioProject Schema."
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
   /><br>
   </p>
 
@@ -162,13 +167,18 @@ A **Digital Object Identifier (DOI)** is a persistent identifier commonly used f
 >**NOTE:** [NLM Data Sharing Resources.](https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html) A repository of repositories!
 
 ## 6. Activity: Make our dataset more Findable (8 minutes)
-**Prompt:** A dataset has a filename and a shareable folder URL. Which Findable requirements, if any, does that establish?
 
-**Scenario:** Return to the fictional file [`final_data_v2_REALLYFINAL.csv`]({{ '/exercises/data/final_data_v2_REALLYFINAL.csv' | relative_url }}) from the Data Reuse Challenge. Its short [`README`]({{ '/exercises/data/README.html' | relative_url }}) is deliberately incomplete.
+<p align="center">
+  <img
+    src="{{ '/assets/03_Findable_and Accessible_Sticky_Note_Task.png' | relative_url }}"
+    alt="Interoperability Layers"
+    style="width: 100%; height: auto; cursor: zoom-in; object-fit: contain; background-color: #000;"
+    onclick="document.fullscreenElement ? document.exitFullscreen() : this.requestFullscreen()"
+  /><br>
+</p>
 
-**Do not invent clinical definitions.** If the original study did not specify what `resp`, `val`, or `grp` mean, mark them as **unknown—requires clarification**.
 
-### Part A — Draft a catalog record
+### Part A — Think, Pair, Share: Draft a catalog record (4 minutes)
 
 Propose values for the following fields:
 
@@ -185,7 +195,7 @@ Propose values for the following fields:
 | Access conditions | |
 | Missing information requiring clarification | |
 
-### Part B — Discussion 
+### Part B — Discussion (4 minutes)
 
 1. Which three metadata fields most improved your ability to discover this dataset?
 2. What can you fill in confidently, and what must remain unknown?
