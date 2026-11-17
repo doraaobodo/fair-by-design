@@ -89,7 +89,7 @@ adapt FAIR thinking specifically to research software.
 ### <span style="color: green;">Standardizing code and data management practices as part of a lab manual</span>
 
 Imagine a lab manual that establishes these shared practices.
-Here is an example of a lab manual that is a living document of software approach in an Epidemiology lab: [Jade Benjamin-Chung, Stanford](https://github.com/jadebc/lab-manual)
+Here is an example of a lab manual that is a living document of software approach in an Epidemiology lab: [Jade Benjamin-Chung, Stanford](https://jadebc.github.io/lab-manual/)
 
 Essentially standard practice empowers research workflows to live beyond the immediate data use.
 
@@ -351,11 +351,6 @@ clinical research.
 community-developed handbook for reproducible, ethical, collaborative research. 
 It is an excellent follow-up resource because it translates abstract principles 
 into day-to-day workflows.
-
-St. Jude Biohackaton Team 20 created an AI and Reproducible Research Assistant grounded on the Turing Way. 
-The assistnat perfoms a diagnostic of your research workflows, allowing for targeted guidance on improvement.
-
-St. Jude AI and Data Learning Assistant in Action: https://github.com/stjude-biohackathon/KIDS26-Team20
 
 To learn more about the Turing Way, start with:
 
