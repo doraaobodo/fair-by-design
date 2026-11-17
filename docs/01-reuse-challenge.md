@@ -117,4 +117,4 @@ interpret, and reuse research objects appropriately.
 
 ---
 
-[← Home]({{ '/docs/index.html/' | relative_url }}) | [Next: FAIR Foundations →]({{ '/docs/02-fair-foundations.html' | relative_url }})
+[← Home]({{ 'index.html' | relative_url }}) | [Next: FAIR Foundations →]({{ '/docs/02-fair-foundations.html' | relative_url }})

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "FAIR Self Assessment"
+title: "FAIR Self-Assessment"
 nav_order: 3
 description: "Introduction and Link to FAIR Sel-Guided Assessment Worksheet"
 ---

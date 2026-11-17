@@ -109,7 +109,7 @@ applicable to their own research.
 | 0:50–0:55 | Break | Five-minute break |
 | 0:55–1:20 | [Interoperable]({{ '/docs/04-interoperable.html' | relative_url }}) | Explore data standards, controlled vocabularies, formats, and integration challenges |
 | 1:20–1:50 | [Reusable]({{ '/docs/05-reusable.html' | relative_url }}) | Examine provenance, documentation, data-use conditions, and reproducible workflows |
-| 1:50–2:00 | [FAIR Action Plan and Resources]({{ '/docs/07-action-plan.html' | relative_url }}) | Identify practical FAIR improvements and explore resources for continued learning |
+| 1:50–2:00 | [FAIR Self-Assessment Take Home]({{ '/docs/06-assessment.html' | relative_url }}) | Explore Checklist for self-guided dataset FAIRification |
 **Total duration:** 120 minutes, including a five-minute break.
 
 
