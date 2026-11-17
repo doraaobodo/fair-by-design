@@ -223,4 +223,4 @@ Propose values for the following fields:
 
 ---
 
-[← Findable and Accessible]({{ '/docs/03-findable-accessible.html' | relative_url }}) | [Next: Interoperable →]({{ '/docs/04-interoperable.html' | relative_url }})
+[← Findable and Accessible]({{ '/docs/03-findable-accessible.html' | relative_url }}) | [Interoperable →]({{ '/docs/04-interoperable.html' | relative_url }})

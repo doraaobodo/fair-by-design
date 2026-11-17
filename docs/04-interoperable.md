@@ -239,4 +239,4 @@ Knowledge Check Answer Key: 0,0,1,0,1,1
 
 ---
 
-[← Findable and Accessible]({{ '/docs/03-findable-accessible.html' | relative_url }}) | [Next: Reusable and Reproducible →]({{ '/docs/05-reusable.html' | relative_url }})
+[← Findable and Accessible]({{ '/docs/03-findable-accessible.html' | relative_url }}) | [Reusable and Reproducible →]({{ '/docs/05-reusable.html' | relative_url }})

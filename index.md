@@ -175,4 +175,4 @@ Visit the [GitHub repository](https://github.com/doraaobodo/fair-by-design) to e
 
 ---
 
-[Next: Data Reuse Challenge →]({{ '/docs/01-reuse-challenge.html' | relative_url }})
+[Data Reuse Challenge →]({{ '/docs/01-reuse-challenge.html' | relative_url }})

@@ -99,4 +99,4 @@ and [README.txt]({{ '/exercises/data/README.txt' | relative_url }}).
 
 ---
 
-[← Data Reuse Challenge]({{ '/docs/01-reuse-challenge.html/' | relative_url }}) | [Next: Findable and Accessible →]({{ '/docs/03-findable-accessible.html' | relative_url }})
+[← Data Reuse Challenge]({{ '/docs/01-reuse-challenge.html/' | relative_url }}) | [Findable and Accessible →]({{ '/docs/03-findable-accessible.html' | relative_url }})

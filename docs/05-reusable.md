@@ -418,4 +418,4 @@ document QC exclusions; record access conditions; or incorporate these practices
 
 ---
 
-[← Interoperable]({{ '/docs/04-interoperable.html' | relative_url }}) | [Next: FAIR Self-Assessment →]({{ '/docs/06-assessment.html' | relative_url }})
+[← Interoperable]({{ '/docs/04-interoperable.html' | relative_url }}) | [FAIR Self-Assessment →]({{ '/docs/06-assessment.html' | relative_url }})
