@@ -103,17 +103,15 @@ applicable to their own research.
 
 | Time | Module | Activity |
 |:---|:---|:---|
-| 0:00–0:10 | [Welcome and Data Reuse Challenge]({{ '/docs/01-reuse-challenge.html' | relative_url }}) | Introductions and an interactive biomedical data reuse scenario |
-| 0:10–0:25 | [FAIR Foundations]({{ '/docs/02-fair-foundations.html' | relative_url }}) | Introduction to FAIR, FAIR vs. open data, sensitive data, and machine-actionability |
-| 0:25–0:50 | [Findable and Accessible]({{ '/docs/03-findable-accessible.html' | relative_url }}) | Evaluate metadata, discoverability, identifiers, and access mechanisms |
-| 0:50–0:55 | Break | Five-minute break |
-| 0:55–1:20 | [Interoperable]({{ '/docs/04-interoperable.html' | relative_url }}) | Explore data standards, controlled vocabularies, formats, and integration challenges |
-| 1:20–1:50 | [Reusable]({{ '/docs/05-reusable.html' | relative_url }}) | Examine provenance, documentation, data-use conditions, and reproducible workflows |
-| 1:50–2:00 | [FAIR Self-Assessment Take Home]({{ '/docs/06-assessment.html' | relative_url }}) | Explore Checklist for self-guided dataset FAIRification |
+| 10:30 AM–10:40 AM | [Welcome and Data Reuse Challenge]({{ '/docs/01-reuse-challenge.html' | relative_url }}) | Introductions and an interactive biomedical data reuse scenario |
+| 10:40 AM–10:55 AM | [FAIR Foundations]({{ '/docs/02-fair-foundations.html' | relative_url }}) | Introduction to FAIR, FAIR vs. open data, sensitive data, and machine-actionability |
+| 10:55 AM–11:20 AM | [Findable and Accessible]({{ '/docs/03-findable-accessible.html' | relative_url }}) | Evaluate metadata, discoverability, identifiers, and access mechanisms |
+| 11:20 AM–11:25 AM | Break | Five-minute break |
+| 11:25 AM–11:50 AM | [Interoperable]({{ '/docs/04-interoperable.html' | relative_url }}) | Explore data standards, controlled vocabularies, formats, and integration challenges |
+| 11:50 AM–12:20 PM | [Reusable]({{ '/docs/05-reusable.html' | relative_url }}) | Examine provenance, documentation, data-use conditions, and reproducible workflows |
+| 12:20 PM–12:30 PM | [FAIR Self-Assessment Take Home]({{ '/docs/06-assessment.html' | relative_url }}) | Explore Checklist for self-guided dataset FAIRification |
 
 **Total duration:** 120 minutes, including a five-minute break.
-
-
 
 
 
